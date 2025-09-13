@@ -1,0 +1,71 @@
+# --- Attack Parameters ---
+# {
+#     "attack_type": "nes",
+#     "executable": "./resources/execution_files/liveness_Vit_mnn",
+#     "image": "/model_deploy_execution_attack/resources/filtered_images/n001843-0183_01.jpg",
+#     "hooks": "/model_deploy_execution_attack/hook_config/liveness_Vit_mnn_hook_config.json",
+#     "model": null,
+#     "models": "/model_deploy_execution_attack/resources/models/liveness_Vit.mnn",
+#     "iterations": 200,
+#     "l_inf_norm": 20.0,
+#     "missing_hook_penalty": 10.0,
+#     "margin": 0.001,
+#     "enable_stagnation_decay": true,
+#     "learning_rate": 5.0,
+#     "lr_decay_rate": 0.97,
+#     "lr_decay_steps": 50,
+#     "stagnation_patience": 20,
+#     "min_loss_delta": 0.001,
+#     "enable_dynamic_focus": false,
+#     "evaluation_window": 10,
+#     "boost_weight": 10.0,
+#     "non_target_weight": 1.0,
+#     "satisfied_weight": 3.0,
+#     "satisfaction_threshold": 0.01,
+#     "satisfaction_patience": 3,
+#     "raw_args_template": null,
+#     "workers": 64,
+#     "output_dir": "/model_deploy_execution_attack/attack_results/liveness_Vit_mnn_nes_n001843-0183_01_20250911-064505",
+#     "population_size": 50,
+#     "sigma": 0.6,
+#     "enable_fitness_shaping": true,
+#     "adam_beta1": 0.9,
+#     "adam_beta2": 0.999,
+#     "adam_epsilon": 1e-08,
+#     "model_paths": [
+#         "/model_deploy_execution_attack/resources/models/liveness_Vit.mnn"
+#     ]
+# }
+# -----------------------
+
+iteration,total_queries,loss,best_loss,lr,is_successful_iter,num_satisfied_hooks,total_hooks,attack_mode,focus_targets,hook_details,iter_time_s,total_time_s
+1,52,0.037775,0.003197,5.000000,False,0,1,static,"N/A","",7.92,9.58
+2,103,0.046192,0.003197,5.000000,False,0,1,static,"N/A","",7.91,17.50
+3,154,0.046432,0.003197,5.000000,False,0,1,static,"N/A","",7.89,25.41
+4,205,0.048231,0.003197,5.000000,False,0,1,static,"N/A","",7.91,33.33
+5,256,0.047931,0.003197,5.000000,False,0,1,static,"N/A","",7.92,41.27
+6,307,0.047159,0.003197,5.000000,False,0,1,static,"N/A","",7.93,49.21
+7,358,0.043982,0.003197,5.000000,False,0,1,static,"N/A","",7.92,57.14
+8,409,0.040350,0.003197,5.000000,False,0,1,static,"N/A","",7.91,65.07
+9,460,0.039790,0.003197,5.000000,False,0,1,static,"N/A","",7.94,73.02
+10,511,0.036605,0.003197,5.000000,False,0,1,static,"N/A","",7.89,80.92
+11,562,0.036703,0.003197,5.000000,False,0,1,static,"N/A","",7.87,88.80
+12,613,0.034408,0.003197,5.000000,False,0,1,static,"N/A","",7.92,96.73
+13,664,0.033507,0.003197,5.000000,False,0,1,static,"N/A","",7.95,104.69
+14,715,0.031417,0.003197,5.000000,False,0,1,static,"N/A","",7.92,112.63
+15,766,0.027698,0.003197,5.000000,False,0,1,static,"N/A","",7.92,120.56
+16,817,0.025909,0.003197,5.000000,False,0,1,static,"N/A","",7.94,128.52
+17,868,0.024460,0.003197,5.000000,False,0,1,static,"N/A","",7.89,136.43
+18,919,0.024507,0.003197,5.000000,False,0,1,static,"N/A","",7.90,144.34
+19,970,0.023697,0.003197,5.000000,False,0,1,static,"N/A","",7.91,152.26
+20,1021,0.022034,0.003197,5.000000,False,0,1,static,"N/A","",7.90,160.17
+21,1072,0.019604,0.003197,5.000000,False,0,1,static,"N/A","",7.91,168.09
+22,1123,0.017296,0.003197,5.000000,False,0,1,static,"N/A","",7.89,175.99
+23,1174,0.015398,0.003197,5.000000,False,0,1,static,"N/A","",7.93,183.93
+24,1225,0.013898,0.003197,5.000000,False,0,1,static,"N/A","",7.94,191.89
+25,1276,0.010595,0.003197,5.000000,False,0,1,static,"N/A","",7.90,199.81
+26,1327,0.009194,0.003197,5.000000,False,1,1,static,"N/A","",7.91,207.73
+27,1378,0.004271,0.003197,5.000000,False,1,1,static,"N/A","",7.96,215.70
+28,1429,0.004881,0.003197,5.000000,False,1,1,static,"N/A","",7.95,223.67
+29,1480,0.002647,0.003197,5.000000,False,1,1,static,"N/A","",7.92,231.60
+30,1531,0.000000,0.002647,5.000000,True,1,1,static,"N/A","{"0x2d1c": {"loss": 0.0, "satisfied": true}}",7.92,239.55

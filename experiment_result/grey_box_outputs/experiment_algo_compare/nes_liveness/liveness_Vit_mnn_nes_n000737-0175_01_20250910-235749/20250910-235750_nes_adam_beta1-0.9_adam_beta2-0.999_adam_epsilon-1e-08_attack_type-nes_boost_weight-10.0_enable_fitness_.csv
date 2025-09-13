@@ -1,0 +1,75 @@
+# --- Attack Parameters ---
+# {
+#     "attack_type": "nes",
+#     "executable": "./resources/execution_files/liveness_Vit_mnn",
+#     "image": "/model_deploy_execution_attack/resources/filtered_images/n000737-0175_01.jpg",
+#     "hooks": "/model_deploy_execution_attack/hook_config/liveness_Vit_mnn_hook_config.json",
+#     "model": null,
+#     "models": "/model_deploy_execution_attack/resources/models/liveness_Vit.mnn",
+#     "iterations": 200,
+#     "l_inf_norm": 20.0,
+#     "missing_hook_penalty": 10.0,
+#     "margin": 0.001,
+#     "enable_stagnation_decay": true,
+#     "learning_rate": 5.0,
+#     "lr_decay_rate": 0.97,
+#     "lr_decay_steps": 50,
+#     "stagnation_patience": 20,
+#     "min_loss_delta": 0.001,
+#     "enable_dynamic_focus": false,
+#     "evaluation_window": 10,
+#     "boost_weight": 10.0,
+#     "non_target_weight": 1.0,
+#     "satisfied_weight": 3.0,
+#     "satisfaction_threshold": 0.01,
+#     "satisfaction_patience": 3,
+#     "raw_args_template": null,
+#     "workers": 64,
+#     "output_dir": "/model_deploy_execution_attack/attack_results/liveness_Vit_mnn_nes_n000737-0175_01_20250910-235749",
+#     "population_size": 50,
+#     "sigma": 0.6,
+#     "enable_fitness_shaping": true,
+#     "adam_beta1": 0.9,
+#     "adam_beta2": 0.999,
+#     "adam_epsilon": 1e-08,
+#     "model_paths": [
+#         "/model_deploy_execution_attack/resources/models/liveness_Vit.mnn"
+#     ]
+# }
+# -----------------------
+
+iteration,total_queries,loss,best_loss,lr,is_successful_iter,num_satisfied_hooks,total_hooks,attack_mode,focus_targets,hook_details,iter_time_s,total_time_s
+1,52,0.244377,0.243526,5.000000,False,0,1,static,"N/A","",7.96,9.62
+2,103,0.230940,0.243526,5.000000,False,0,1,static,"N/A","",7.92,17.56
+3,154,0.220972,0.230940,5.000000,False,0,1,static,"N/A","",7.95,25.53
+4,205,0.211355,0.220972,5.000000,False,0,1,static,"N/A","",7.94,33.50
+5,256,0.196483,0.211355,5.000000,False,0,1,static,"N/A","",7.92,41.44
+6,307,0.179748,0.196483,5.000000,False,0,1,static,"N/A","",7.90,49.37
+7,358,0.164835,0.179748,5.000000,False,0,1,static,"N/A","",7.92,57.31
+8,409,0.150532,0.164835,5.000000,False,0,1,static,"N/A","",7.95,65.29
+9,460,0.134991,0.150532,5.000000,False,0,1,static,"N/A","",7.92,73.24
+10,511,0.125828,0.134991,5.000000,False,0,1,static,"N/A","",7.93,81.19
+11,562,0.108307,0.125828,5.000000,False,0,1,static,"N/A","",7.90,89.11
+12,613,0.099278,0.108307,5.000000,False,0,1,static,"N/A","",7.94,97.08
+13,664,0.090164,0.099278,5.000000,False,0,1,static,"N/A","",7.90,105.00
+14,715,0.081593,0.090164,5.000000,False,0,1,static,"N/A","",7.90,112.93
+15,766,0.074965,0.081593,5.000000,False,0,1,static,"N/A","",7.93,120.89
+16,817,0.067943,0.074965,5.000000,False,0,1,static,"N/A","",7.94,128.86
+17,868,0.062483,0.067943,5.000000,False,0,1,static,"N/A","",7.94,136.82
+18,919,0.058485,0.062483,5.000000,False,0,1,static,"N/A","",7.95,144.80
+19,970,0.053249,0.058485,5.000000,False,0,1,static,"N/A","",7.88,152.70
+20,1021,0.048242,0.053249,5.000000,False,0,1,static,"N/A","",7.93,160.65
+21,1072,0.043184,0.048242,5.000000,False,0,1,static,"N/A","",7.90,168.58
+22,1123,0.039544,0.043184,5.000000,False,0,1,static,"N/A","",7.90,176.50
+23,1174,0.036010,0.039544,5.000000,False,0,1,static,"N/A","",7.97,184.50
+24,1225,0.031294,0.036010,5.000000,False,0,1,static,"N/A","",7.95,192.47
+25,1276,0.027391,0.031294,5.000000,False,0,1,static,"N/A","",7.93,200.43
+26,1327,0.023516,0.027391,5.000000,False,0,1,static,"N/A","",7.92,208.37
+27,1378,0.019873,0.023516,5.000000,False,0,1,static,"N/A","",7.92,216.32
+28,1429,0.017419,0.019873,5.000000,False,0,1,static,"N/A","",7.95,224.30
+29,1480,0.013508,0.017419,5.000000,False,0,1,static,"N/A","",7.89,232.22
+30,1531,0.009749,0.013508,5.000000,False,1,1,static,"N/A","",7.93,240.17
+31,1582,0.007128,0.009749,5.000000,False,1,1,static,"N/A","",7.98,248.18
+32,1633,0.002802,0.007128,5.000000,False,1,1,static,"N/A","",7.95,256.16
+33,1684,0.001117,0.002802,5.000000,False,1,1,static,"N/A","",7.89,264.07
+34,1735,0.000000,0.001117,5.000000,True,1,1,static,"N/A","{"0x2d1c": {"loss": 0.0, "satisfied": true}}",7.89,271.99

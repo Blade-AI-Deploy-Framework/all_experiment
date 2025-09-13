@@ -1,0 +1,93 @@
+# --- Attack Parameters ---
+# {
+#     "executable": "./resources/execution_files/age_googlenet_mnn",
+#     "image": "/img_align_celeba/098121.jpg",
+#     "hooks": "/temp/hook_config/age_googlenet_mnn_hook_config.json",
+#     "model": [
+#         "/temp/resources/models/age_googlenet.mnn"
+#     ],
+#     "models": null,
+#     "iterations": 100,
+#     "learning_rate": 5.0,
+#     "l_inf_norm": 30.0,
+#     "lr_decay_rate": 0.97,
+#     "lr_decay_steps": 50,
+#     "missing_hook_penalty": 10.0,
+#     "margin": 0.05,
+#     "population_size": 200,
+#     "sigma": 0.6,
+#     "enable_stagnation_decay": true,
+#     "stagnation_patience": 20,
+#     "min_loss_delta": 0.001,
+#     "enable_fitness_shaping": true,
+#     "adam_beta1": 0.9,
+#     "adam_beta2": 0.999,
+#     "adam_epsilon": 1e-08,
+#     "enable_dynamic_focus": true,
+#     "evaluation_window": 10,
+#     "boost_weight": 12.0,
+#     "non_target_weight": 1.0,
+#     "satisfied_weight": 3.0,
+#     "satisfaction_threshold": 0.01,
+#     "satisfaction_patience": 3,
+#     "raw_args_template": null,
+#     "workers": 64,
+#     "output_dir": "/temp/outputs/age_googlenet_mnn_attack_results/098121_attacked",
+#     "model_paths": [
+#         "/temp/resources/models/age_googlenet.mnn"
+#     ]
+# }
+# -----------------------
+
+iteration,total_queries,loss,best_loss,lr,is_successful_iter,num_satisfied_hooks,total_hooks,attack_mode,focus_targets,hook_details,iter_time_s,total_time_s
+1,202,40.746782,inf,5.000000,False,1,6,scouting,"None","",5.75,6.31
+2,403,40.703641,40.746782,5.000000,False,1,6,scouting,"None","",5.78,12.87
+3,604,40.652182,40.703641,5.000000,False,1,6,scouting,"None","",5.80,19.45
+4,805,40.594614,40.652182,5.000000,False,1,6,scouting,"None","",5.74,25.96
+5,1006,40.534599,40.594614,5.000000,False,1,6,scouting,"None","",5.70,32.44
+6,1207,40.475708,40.534599,5.000000,False,1,6,scouting,"None","",5.78,38.99
+7,1408,40.418125,40.475708,5.000000,False,1,6,scouting,"None","",5.80,45.56
+8,1609,40.365685,40.418125,5.000000,False,1,6,scouting,"None","",5.76,52.10
+9,1810,40.317574,40.365685,5.000000,False,1,6,scouting,"None","",5.74,58.61
+10,2011,40.275301,40.317574,5.000000,False,1,6,scouting,"None","",5.69,65.07
+11,2212,42.845588,40.275301,5.000000,False,1,6,focused_fire,"0x233c","",5.81,71.65
+12,2413,42.466392,40.275301,5.000000,False,1,6,focused_fire,"0x233c","",5.72,77.37
+13,2614,42.594897,40.275301,5.000000,False,1,6,focused_fire,"0x233c","",5.86,83.24
+14,2815,42.636239,40.275301,5.000000,False,1,6,focused_fire,"0x233c","",5.73,88.97
+15,3016,42.570344,40.275301,5.000000,False,1,6,focused_fire,"0x233c","",5.77,94.75
+16,3217,42.437859,40.275301,5.000000,False,1,6,focused_fire,"0x233c","",5.72,100.47
+17,3418,42.210043,40.275301,5.000000,False,1,6,focused_fire,"0x233c","",5.79,106.26
+18,3619,41.988801,40.275301,5.000000,False,1,6,focused_fire,"0x233c","",5.87,112.14
+19,3820,41.787268,40.275301,5.000000,False,1,6,focused_fire,"0x233c","",5.75,117.89
+20,4021,41.761532,40.275301,5.000000,False,1,6,focused_fire,"0x233c","",5.84,123.74
+21,4222,41.705164,40.275301,5.000000,False,1,6,focused_fire,"0x233c","",5.71,129.45
+22,4423,41.619212,40.275301,5.000000,False,1,6,focused_fire,"0x233c","",5.68,135.14
+23,4624,41.508219,40.275301,5.000000,False,1,6,focused_fire,"0x233c","",5.87,141.01
+24,4825,41.367660,40.275301,5.000000,False,1,6,focused_fire,"0x233c","",5.81,146.82
+25,5026,41.205752,40.275301,5.000000,False,1,6,focused_fire,"0x233c","",5.77,152.59
+26,5227,41.119873,40.275301,5.000000,False,1,6,focused_fire,"0x233c","",5.72,158.32
+27,5428,41.001557,40.275301,5.000000,False,1,6,focused_fire,"0x233c","",5.75,164.07
+28,5629,40.853729,40.275301,5.000000,False,1,6,focused_fire,"0x233c","",5.90,169.97
+29,5830,40.733143,40.275301,5.000000,False,1,6,focused_fire,"0x233c","",5.73,175.70
+30,6031,40.603932,40.275301,5.000000,False,1,6,focused_fire,"0x233c","",5.75,181.46
+31,6232,30.709247,40.275301,5.000000,False,1,6,focused_fire,"0x233c","",5.78,187.24
+32,6433,30.565566,30.709247,5.000000,False,1,6,focused_fire,"0x233c","",5.81,193.83
+33,6634,30.417472,30.565566,5.000000,False,1,6,focused_fire,"0x233c","",5.73,200.34
+34,6835,30.292925,30.417472,5.000000,False,2,6,focused_fire,"0x233c","",5.73,206.85
+35,7036,30.222146,30.292925,5.000000,False,2,6,focused_fire,"0x233c","",5.77,213.39
+36,7237,30.212916,30.222146,5.000000,False,2,6,focused_fire,"0x233c","",5.75,219.93
+37,7438,30.202921,30.212916,5.000000,False,2,6,scouting,"None","",5.70,226.42
+38,7639,30.192745,30.202921,5.000000,False,2,6,scouting,"None","",5.83,233.02
+39,7840,30.183069,30.192745,5.000000,False,2,6,scouting,"None","",5.76,239.56
+40,8041,30.173455,30.183069,5.000000,False,2,6,scouting,"None","",5.73,246.08
+41,8242,30.162519,30.173455,5.000000,False,2,6,scouting,"None","",5.72,252.58
+42,8443,30.151386,30.162519,5.000000,False,2,6,scouting,"None","",5.68,259.02
+43,8644,30.140192,30.151386,5.000000,False,2,6,scouting,"None","",5.73,265.53
+44,8845,30.129162,30.140192,5.000000,False,2,6,scouting,"None","",5.74,272.06
+45,9046,30.117320,30.129162,5.000000,False,2,6,scouting,"None","",5.71,278.55
+46,9247,30.105475,30.117320,5.000000,False,2,6,scouting,"None","",5.76,285.10
+47,9448,31.046747,30.105475,5.000000,False,2,6,focused_fire,"0x2364","",5.82,291.71
+48,9649,30.906674,30.105475,5.000000,False,2,6,focused_fire,"0x2364","",5.68,297.39
+49,9850,30.764947,30.105475,5.000000,False,2,6,focused_fire,"0x2364","",5.82,303.22
+50,10051,30.629094,30.105475,5.000000,False,2,6,focused_fire,"0x2364","",5.77,308.99
+51,10252,30.504163,30.105475,4.850000,True,2,6,focused_fire,"0x2364","{"0x2318": {"loss": 10.0, "satisfied": false}, "0x2324": {"loss": 10.0, "satisfied": false}, "0x233c": {"loss": 0.0, "satisfied": true}, "0x2348": {"loss": 10.0, "satisfied": false}, "0x2358": {"loss": 0.0025, "satisfied": true}, "0x2364": {"loss": 0.041389, "satisfied": false}}",5.75,314.74

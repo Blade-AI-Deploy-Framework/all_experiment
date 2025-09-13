@@ -1,0 +1,61 @@
+# --- Attack Parameters ---
+# {
+#     "executable": "./resources/execution_files/age_googlenet_mnn",
+#     "image": "/img_align_celeba/158311.jpg",
+#     "hooks": "/model_deploy_execution_attack_for_pipeline/hook_config/age_googlenet_mnn_hook_config.json",
+#     "model": [
+#         "/model_deploy_execution_attack_for_pipeline/resources/models/age_googlenet.mnn"
+#     ],
+#     "models": null,
+#     "iterations": 100,
+#     "learning_rate": 5.0,
+#     "l_inf_norm": 30.0,
+#     "lr_decay_rate": 0.97,
+#     "lr_decay_steps": 50,
+#     "missing_hook_penalty": 10.0,
+#     "margin": 0.05,
+#     "population_size": 200,
+#     "sigma": 0.6,
+#     "enable_stagnation_decay": true,
+#     "stagnation_patience": 20,
+#     "min_loss_delta": 0.001,
+#     "enable_fitness_shaping": true,
+#     "adam_beta1": 0.9,
+#     "adam_beta2": 0.999,
+#     "adam_epsilon": 1e-08,
+#     "enable_dynamic_focus": true,
+#     "evaluation_window": 10,
+#     "boost_weight": 12.0,
+#     "non_target_weight": 1.0,
+#     "satisfied_weight": 3.0,
+#     "satisfaction_threshold": 0.01,
+#     "satisfaction_patience": 3,
+#     "raw_args_template": null,
+#     "workers": 64,
+#     "output_dir": "/model_deploy_execution_attack_for_pipeline/outputs/age_googlenet_mnn_attack_results/158311_attacked",
+#     "model_paths": [
+#         "/model_deploy_execution_attack_for_pipeline/resources/models/age_googlenet.mnn"
+#     ]
+# }
+# -----------------------
+
+iteration,total_queries,loss,best_loss,lr,is_successful_iter,num_satisfied_hooks,total_hooks,attack_mode,focus_targets,hook_details,iter_time_s,total_time_s
+1,202,40.748333,inf,5.000000,False,1,6,scouting,"None","",5.69,6.25
+2,403,40.676175,40.748333,5.000000,False,1,6,scouting,"None","",5.80,12.82
+3,604,40.601477,40.676175,5.000000,False,1,6,scouting,"None","",5.76,19.35
+4,805,40.522993,40.601477,5.000000,False,1,6,scouting,"None","",5.73,25.85
+5,1006,40.446967,40.522993,5.000000,False,1,6,scouting,"None","",5.75,32.38
+6,1207,40.371261,40.446967,5.000000,False,1,6,scouting,"None","",5.76,38.92
+7,1408,40.297325,40.371261,5.000000,False,1,6,scouting,"None","",5.76,45.46
+8,1609,40.228666,40.297325,5.000000,False,1,6,scouting,"None","",5.68,51.91
+9,1810,40.161834,40.228666,5.000000,False,1,6,scouting,"None","",5.76,58.44
+10,2011,40.095264,40.161834,5.000000,False,1,6,scouting,"None","",5.82,65.05
+11,2212,30.425298,40.095264,5.000000,False,2,6,focused_fire,"0x233c","",5.70,71.51
+12,2413,30.007500,30.425298,5.000000,False,3,6,focused_fire,"0x233c","",5.71,77.99
+13,2614,30.007500,30.007500,5.000000,False,3,6,focused_fire,"0x233c","",5.78,84.54
+14,2815,30.007500,30.007500,5.000000,False,3,6,focused_fire,"0x233c","",5.83,90.37
+15,3016,30.007500,30.007500,5.000000,False,3,6,scouting,"None","",5.77,96.15
+16,3217,30.007500,30.007500,5.000000,False,3,6,scouting,"None","",5.74,101.89
+17,3418,30.007500,30.007500,5.000000,False,3,6,scouting,"None","",5.69,107.58
+18,3619,30.007500,30.007500,5.000000,False,3,6,scouting,"None","",5.73,113.32
+19,3820,30.007500,30.007500,5.000000,True,3,6,scouting,"None","{"0x2318": {"loss": 10.0, "satisfied": false}, "0x2324": {"loss": 10.0, "satisfied": false}, "0x233c": {"loss": 0.0, "satisfied": true}, "0x2348": {"loss": 10.0, "satisfied": false}, "0x2358": {"loss": 0.0025, "satisfied": true}, "0x2364": {"loss": 0.0, "satisfied": true}}",5.81,119.12

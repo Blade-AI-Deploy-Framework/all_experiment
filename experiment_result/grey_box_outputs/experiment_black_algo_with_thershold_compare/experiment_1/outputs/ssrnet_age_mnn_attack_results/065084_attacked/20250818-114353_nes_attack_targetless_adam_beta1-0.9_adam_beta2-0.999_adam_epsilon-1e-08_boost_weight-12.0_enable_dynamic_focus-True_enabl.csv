@@ -1,0 +1,52 @@
+# --- Attack Parameters ---
+# {
+#     "executable": "/temp/resources/execution_files/ssrnet_age_mnn",
+#     "image": "/img_align_celeba/065084.jpg",
+#     "hooks": "/temp/hook_config/ssrnet_age_mnn_hook_config.json",
+#     "model": [
+#         "/temp/resources/models/ssrnet_age.mnn"
+#     ],
+#     "models": null,
+#     "iterations": 200,
+#     "learning_rate": 2.0,
+#     "l_inf_norm": 16.0,
+#     "lr_decay_rate": 0.97,
+#     "lr_decay_steps": 50,
+#     "missing_hook_penalty": 10.0,
+#     "margin": 0.05,
+#     "population_size": 200,
+#     "sigma": 0.6,
+#     "enable_stagnation_decay": true,
+#     "stagnation_patience": 20,
+#     "min_loss_delta": 0.001,
+#     "enable_fitness_shaping": true,
+#     "adam_beta1": 0.9,
+#     "adam_beta2": 0.999,
+#     "adam_epsilon": 1e-08,
+#     "enable_dynamic_focus": true,
+#     "evaluation_window": 10,
+#     "boost_weight": 12.0,
+#     "non_target_weight": 1.0,
+#     "satisfied_weight": 3.0,
+#     "satisfaction_threshold": 0.01,
+#     "satisfaction_patience": 3,
+#     "raw_args_template": null,
+#     "workers": 64,
+#     "output_dir": "/temp/outputs/ssrnet_age_mnn_attack_results/065084_attacked",
+#     "model_paths": [
+#         "/temp/resources/models/ssrnet_age.mnn"
+#     ]
+# }
+# -----------------------
+
+iteration,total_queries,loss,best_loss,lr,is_successful_iter,num_satisfied_hooks,total_hooks,attack_mode,focus_targets,hook_details,iter_time_s,total_time_s
+1,202,44.299032,inf,2.000000,False,0,2,scouting,"None","",4.44,4.84
+2,403,37.303731,44.299032,2.000000,False,0,2,scouting,"None","",4.36,9.65
+3,604,27.880227,37.303731,2.000000,False,0,2,scouting,"None","",4.32,14.41
+4,805,25.572804,27.880227,2.000000,False,0,2,scouting,"None","",4.31,19.17
+5,1006,23.676968,25.572804,2.000000,False,0,2,scouting,"None","",4.36,23.97
+6,1207,20.941602,23.676968,2.000000,False,0,2,scouting,"None","",4.29,28.71
+7,1408,17.504071,20.941602,2.000000,False,0,2,scouting,"None","",4.28,33.43
+8,1609,14.735001,17.504071,2.000000,False,0,2,scouting,"None","",4.33,38.21
+9,1810,10.719197,14.735001,2.000000,False,0,2,scouting,"None","",4.25,42.90
+10,2011,0.000000,10.719197,2.000000,True,2,2,scouting,"None","{"0x1ff0": {"loss": 0.0, "satisfied": true}, "0x2004": {"loss": 0.0, "satisfied": true}}",4.29,47.63

@@ -1,0 +1,62 @@
+# --- Attack Parameters ---
+# {
+#     "executable": "/temp/resources/execution_files/fsanet_headpose_mnn",
+#     "image": "/img_align_celeba/094203.jpg",
+#     "hooks": "/temp/hook_config/fsanet_headpose_mnn_hook_config.json",
+#     "model": null,
+#     "models": "/temp/resources/models/fsanet-var.mnn,/temp/resources/models/fsanet-1x1.mnn",
+#     "iterations": 200,
+#     "learning_rate": 2.0,
+#     "l_inf_norm": 16.0,
+#     "lr_decay_rate": 0.97,
+#     "lr_decay_steps": 50,
+#     "missing_hook_penalty": 10.0,
+#     "margin": 0.05,
+#     "population_size": 200,
+#     "sigma": 0.6,
+#     "enable_stagnation_decay": true,
+#     "stagnation_patience": 20,
+#     "min_loss_delta": 0.001,
+#     "enable_fitness_shaping": true,
+#     "adam_beta1": 0.9,
+#     "adam_beta2": 0.999,
+#     "adam_epsilon": 1e-08,
+#     "enable_dynamic_focus": true,
+#     "evaluation_window": 10,
+#     "boost_weight": 12.0,
+#     "non_target_weight": 1.0,
+#     "satisfied_weight": 3.0,
+#     "satisfaction_threshold": 0.01,
+#     "satisfaction_patience": 3,
+#     "raw_args_template": null,
+#     "workers": 64,
+#     "output_dir": "/temp/outputs/fsanet_headpose_mnn_attack_results/094203_attacked",
+#     "model_paths": [
+#         "/temp/resources/models/fsanet-var.mnn",
+#         "/temp/resources/models/fsanet-1x1.mnn"
+#     ]
+# }
+# -----------------------
+
+iteration,total_queries,loss,best_loss,lr,is_successful_iter,num_satisfied_hooks,total_hooks,attack_mode,focus_targets,hook_details,iter_time_s,total_time_s
+1,202,37.052172,inf,2.000000,False,0,3,scouting,"None","",4.32,4.72
+2,403,35.279637,37.052172,2.000000,False,0,3,scouting,"None","",4.41,9.59
+3,604,33.560469,35.279637,2.000000,False,0,3,scouting,"None","",4.34,14.39
+4,805,31.870505,33.560469,2.000000,False,0,3,scouting,"None","",4.35,19.20
+5,1006,30.168507,31.870505,2.000000,False,0,3,scouting,"None","",4.32,23.97
+6,1207,28.587991,30.168507,2.000000,False,0,3,scouting,"None","",4.31,28.74
+7,1408,27.145720,28.587991,2.000000,False,0,3,scouting,"None","",4.30,33.49
+8,1609,25.712554,27.145720,2.000000,False,0,3,scouting,"None","",4.36,38.33
+9,1810,24.520119,25.712554,2.000000,False,0,3,scouting,"None","",4.30,43.08
+10,2011,23.138600,24.520119,2.000000,False,0,3,scouting,"None","",4.38,47.92
+11,2212,44.903040,23.138600,2.000000,False,0,3,focused_fire,"0x2354","",4.37,52.75
+12,2413,31.430323,23.138600,2.000000,False,0,3,focused_fire,"0x2354","",4.34,57.08
+13,2614,15.500051,23.138600,2.000000,False,1,3,focused_fire,"0x2354","",4.29,61.37
+14,2815,15.020955,15.500051,2.000000,False,1,3,focused_fire,"0x2354","",4.42,66.26
+15,3016,14.379762,15.020955,2.000000,False,1,3,focused_fire,"0x2354","",4.33,71.04
+16,3217,13.729720,14.379762,2.000000,False,1,3,scouting,"None","",4.43,75.92
+17,3418,12.552481,13.729720,2.000000,False,1,3,scouting,"None","",4.34,80.73
+18,3619,11.901872,12.552481,2.000000,False,1,3,scouting,"None","",4.30,85.48
+19,3820,11.118564,11.901872,2.000000,False,1,3,scouting,"None","",4.36,90.29
+20,4021,10.129865,11.118564,2.000000,False,1,3,scouting,"None","",4.36,95.11
+21,4222,0.000000,10.129865,2.000000,True,3,3,scouting,"None","{"0x2354": {"loss": 0.0, "satisfied": true}, "0x2420": {"loss": 0.0, "satisfied": true}, "0x2438": {"loss": 0.0, "satisfied": true}}",4.34,99.91

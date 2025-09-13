@@ -1,0 +1,42 @@
+{
+    "status": "SUCCESS",
+    "config": {
+        "executable": "./resources/execution_files/ssrnet_age_mnn",
+        "benign_image": "/img_align_celeba/109189.jpg",
+        "initial_adv_image": "/img_align_celeba/116718.jpg",
+        "l2_epsilon_goal": 0.05,
+        "linf_epsilon_goal": 0.06274509803921569,
+        "query_budget": 40000,
+        "max_iterations": 1000,
+        "initial_queries": 50,
+        "dimension_reduction": 1.0
+    },
+    "results": {
+        "total_queries": 3410,
+        "final_l2_distance": 4.313237190246582,
+        "final_linf_distance": 0.058007389307022095,
+        "total_duration_seconds": 47.510035037994385,
+        "iteration_times_seconds": [
+            2.22756028175354,
+            2.3036577701568604,
+            2.4793429374694824,
+            2.3563337326049805,
+            2.40423321723938,
+            2.4470419883728027,
+            2.5003230571746826,
+            2.3955578804016113,
+            2.4291274547576904,
+            2.4636690616607666,
+            2.4941763877868652,
+            2.5411767959594727,
+            2.449916362762451,
+            2.4407060146331787,
+            2.425834894180298,
+            2.3960506916046143,
+            2.378566265106201,
+            2.4142284393310547,
+            2.4634852409362793
+        ],
+        "output_image_path": "/model_deploy_execution_attack_for_pipeline/outputs/ssrnet_age_mnn_109189_ttba_attack/adversarial_image.png"
+    }
+}

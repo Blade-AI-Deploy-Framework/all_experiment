@@ -1,0 +1,32 @@
+[
+		{
+				"address": "0x1df8",
+				"instruction": "fcmpe s0, s1",
+				"branch_instruction": "b.ls"
+		},
+		{
+				"address": "0x1de0",
+				"instruction": "fcmpe s0, s1",
+				"branch_instruction": "b.ge"
+		},
+		{
+				"address": "0x1e34",
+				"instruction": "cmp, x0, 0",
+				"branch_instruction": " b.eq"
+		},
+		{
+				"address": "0x1e50",
+				"instruction": "cmp, w0, 1",
+				"branch_instruction": " b.ne"
+		},
+		{
+				"address": "0x1e78",
+				"instruction": "cmp, x0, 0",
+				"branch_instruction": " b.eq"
+		},
+		{
+				"address": "0x1ec4",
+				"instruction": "cmp, x0, 0",
+				"branch_instruction": " b.eq"
+		}
+]

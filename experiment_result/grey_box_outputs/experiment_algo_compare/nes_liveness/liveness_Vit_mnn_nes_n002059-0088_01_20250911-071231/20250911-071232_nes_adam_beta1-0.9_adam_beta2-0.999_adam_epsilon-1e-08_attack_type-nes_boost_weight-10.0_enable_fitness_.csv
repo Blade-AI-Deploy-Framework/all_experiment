@@ -1,0 +1,74 @@
+# --- Attack Parameters ---
+# {
+#     "attack_type": "nes",
+#     "executable": "./resources/execution_files/liveness_Vit_mnn",
+#     "image": "/model_deploy_execution_attack/resources/filtered_images/n002059-0088_01.jpg",
+#     "hooks": "/model_deploy_execution_attack/hook_config/liveness_Vit_mnn_hook_config.json",
+#     "model": null,
+#     "models": "/model_deploy_execution_attack/resources/models/liveness_Vit.mnn",
+#     "iterations": 200,
+#     "l_inf_norm": 20.0,
+#     "missing_hook_penalty": 10.0,
+#     "margin": 0.001,
+#     "enable_stagnation_decay": true,
+#     "learning_rate": 5.0,
+#     "lr_decay_rate": 0.97,
+#     "lr_decay_steps": 50,
+#     "stagnation_patience": 20,
+#     "min_loss_delta": 0.001,
+#     "enable_dynamic_focus": false,
+#     "evaluation_window": 10,
+#     "boost_weight": 10.0,
+#     "non_target_weight": 1.0,
+#     "satisfied_weight": 3.0,
+#     "satisfaction_threshold": 0.01,
+#     "satisfaction_patience": 3,
+#     "raw_args_template": null,
+#     "workers": 64,
+#     "output_dir": "/model_deploy_execution_attack/attack_results/liveness_Vit_mnn_nes_n002059-0088_01_20250911-071231",
+#     "population_size": 50,
+#     "sigma": 0.6,
+#     "enable_fitness_shaping": true,
+#     "adam_beta1": 0.9,
+#     "adam_beta2": 0.999,
+#     "adam_epsilon": 1e-08,
+#     "model_paths": [
+#         "/model_deploy_execution_attack/resources/models/liveness_Vit.mnn"
+#     ]
+# }
+# -----------------------
+
+iteration,total_queries,loss,best_loss,lr,is_successful_iter,num_satisfied_hooks,total_hooks,attack_mode,focus_targets,hook_details,iter_time_s,total_time_s
+1,52,0.108740,0.057304,5.000000,False,0,1,static,"N/A","",7.88,9.56
+2,103,0.130291,0.057304,5.000000,False,0,1,static,"N/A","",7.90,17.47
+3,154,0.143154,0.057304,5.000000,False,0,1,static,"N/A","",7.88,25.37
+4,205,0.147045,0.057304,5.000000,False,0,1,static,"N/A","",7.93,33.31
+5,256,0.144166,0.057304,5.000000,False,0,1,static,"N/A","",7.93,41.25
+6,307,0.144137,0.057304,5.000000,False,0,1,static,"N/A","",7.94,49.21
+7,358,0.129012,0.057304,5.000000,False,0,1,static,"N/A","",7.96,57.18
+8,409,0.127026,0.057304,5.000000,False,0,1,static,"N/A","",7.92,65.11
+9,460,0.115759,0.057304,5.000000,False,0,1,static,"N/A","",7.92,73.04
+10,511,0.104012,0.057304,5.000000,False,0,1,static,"N/A","",7.88,80.93
+11,562,0.093670,0.057304,5.000000,False,0,1,static,"N/A","",7.96,88.91
+12,613,0.088720,0.057304,5.000000,False,0,1,static,"N/A","",7.92,96.84
+13,664,0.080852,0.057304,5.000000,False,0,1,static,"N/A","",7.95,104.80
+14,715,0.074699,0.057304,5.000000,False,0,1,static,"N/A","",7.90,112.72
+15,766,0.065001,0.057304,5.000000,False,0,1,static,"N/A","",7.93,120.66
+16,817,0.058522,0.057304,5.000000,False,0,1,static,"N/A","",7.89,128.56
+17,868,0.052214,0.057304,5.000000,False,0,1,static,"N/A","",7.86,136.43
+18,919,0.047588,0.052214,5.000000,False,0,1,static,"N/A","",7.88,144.33
+19,970,0.040874,0.047588,5.000000,False,0,1,static,"N/A","",7.90,152.25
+20,1021,0.040710,0.040874,5.000000,False,0,1,static,"N/A","",7.87,160.15
+21,1072,0.035483,0.040710,5.000000,False,0,1,static,"N/A","",7.89,168.07
+22,1123,0.032261,0.035483,5.000000,False,0,1,static,"N/A","",7.95,176.04
+23,1174,0.030634,0.032261,5.000000,False,0,1,static,"N/A","",7.93,183.99
+24,1225,0.029631,0.030634,5.000000,False,0,1,static,"N/A","",7.91,191.93
+25,1276,0.025588,0.029631,5.000000,False,0,1,static,"N/A","",7.95,199.91
+26,1327,0.022008,0.025588,5.000000,False,0,1,static,"N/A","",7.95,207.88
+27,1378,0.018588,0.022008,5.000000,False,0,1,static,"N/A","",7.93,215.83
+28,1429,0.016916,0.018588,5.000000,False,0,1,static,"N/A","",7.93,223.79
+29,1480,0.013817,0.016916,5.000000,False,0,1,static,"N/A","",7.89,231.71
+30,1531,0.009718,0.013817,5.000000,False,1,1,static,"N/A","",7.95,239.68
+31,1582,0.005870,0.009718,5.000000,False,1,1,static,"N/A","",7.87,247.58
+32,1633,0.002382,0.005870,5.000000,False,1,1,static,"N/A","",7.90,255.51
+33,1684,0.000552,0.002382,5.000000,True,1,1,static,"N/A","{"0x2d1c": {"loss": 0.000552, "satisfied": true}}",7.90,263.43

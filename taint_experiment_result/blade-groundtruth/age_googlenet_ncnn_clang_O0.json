@@ -1,0 +1,52 @@
+[
+    {
+        "address": "0x1f80", 
+        "branch_instruction": "b.ne", 
+        "instruction": "subs w8,w8,#0x5"
+    }, 
+    {
+        "address": "0x1f94", 
+        "branch_instruction": "b.le", 
+        "instruction": "fcmp s0,s1"
+    },
+    {
+        "address":"0x216c",
+        "instruction":"subs w8,w8,#0x1",
+        "branch_instruction":"b.ne"
+    },
+    {
+        "address":"0x2144",
+        "instruction":"cbz x8,LAB_001021cc",
+        "branch_instruction":"cbz"
+    },
+    {
+        "address":"0x2180",
+        "instruction":"cbz x8,LAB_001021a8",
+        "branch_instruction":"cbz"
+    },
+    {
+        "address":"0x21b8",
+        "instruction":"cbz x8,LAB_001021cc",
+        "branch_instruction":"cbz"
+    },
+    {
+        "address":"0x222c",
+        "instruction":"cbz x8,LAB_001022bc",
+        "branch_instruction":"cbz"
+    },
+    {
+        "address":"0x2254",
+        "instruction":"subs w8,w8,#0x1",
+        "branch_instruction":"b.ne"
+    },
+    {
+        "address":"0x2268",
+        "instruction":"cbz x8,LAB_00102290",
+        "branch_instruction":"cbz"
+    },
+    {
+        "address":"0x22a0",
+        "instruction":"cbz x8,LAB_001022b4",
+        "branch_instruction":"cbz"
+    }
+]

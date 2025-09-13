@@ -1,0 +1,18 @@
+[
+    {
+        "address": "0x25cc",
+        "instruction": "fcmpe s1, s0",
+        "branch_instruction": "b.mi"
+    },
+
+    {
+        "address": "0x25e8",
+        "instruction": "fcmpe s1, s0",
+        "branch_instruction": "b.mi"
+    },
+    {
+        "address": "0x2604",
+        "instruction": "fcmpe s1, s0",
+        "branch_instruction": "b.mi"
+    }
+]

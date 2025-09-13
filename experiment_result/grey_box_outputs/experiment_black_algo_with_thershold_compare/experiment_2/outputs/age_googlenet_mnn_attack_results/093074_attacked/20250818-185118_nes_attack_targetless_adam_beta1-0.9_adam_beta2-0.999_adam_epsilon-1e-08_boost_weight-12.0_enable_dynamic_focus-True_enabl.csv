@@ -1,0 +1,74 @@
+# --- Attack Parameters ---
+# {
+#     "executable": "./resources/execution_files/age_googlenet_mnn",
+#     "image": "/img_align_celeba/093074.jpg",
+#     "hooks": "/temp/hook_config/age_googlenet_mnn_hook_config.json",
+#     "model": [
+#         "/temp/resources/models/age_googlenet.mnn"
+#     ],
+#     "models": null,
+#     "iterations": 100,
+#     "learning_rate": 5.0,
+#     "l_inf_norm": 30.0,
+#     "lr_decay_rate": 0.97,
+#     "lr_decay_steps": 50,
+#     "missing_hook_penalty": 10.0,
+#     "margin": 0.05,
+#     "population_size": 200,
+#     "sigma": 0.6,
+#     "enable_stagnation_decay": true,
+#     "stagnation_patience": 20,
+#     "min_loss_delta": 0.001,
+#     "enable_fitness_shaping": true,
+#     "adam_beta1": 0.9,
+#     "adam_beta2": 0.999,
+#     "adam_epsilon": 1e-08,
+#     "enable_dynamic_focus": true,
+#     "evaluation_window": 10,
+#     "boost_weight": 12.0,
+#     "non_target_weight": 1.0,
+#     "satisfied_weight": 3.0,
+#     "satisfaction_threshold": 0.01,
+#     "satisfaction_patience": 3,
+#     "raw_args_template": null,
+#     "workers": 64,
+#     "output_dir": "/temp/outputs/age_googlenet_mnn_attack_results/093074_attacked",
+#     "model_paths": [
+#         "/temp/resources/models/age_googlenet.mnn"
+#     ]
+# }
+# -----------------------
+
+iteration,total_queries,loss,best_loss,lr,is_successful_iter,num_satisfied_hooks,total_hooks,attack_mode,focus_targets,hook_details,iter_time_s,total_time_s
+1,202,40.793762,inf,5.000000,False,1,6,scouting,"None","",5.79,6.36
+2,403,40.757850,40.793762,5.000000,False,1,6,scouting,"None","",5.80,12.94
+3,604,40.722133,40.757850,5.000000,False,1,6,scouting,"None","",5.76,19.48
+4,805,40.682668,40.722133,5.000000,False,1,6,scouting,"None","",5.76,26.02
+5,1006,40.639053,40.682668,5.000000,False,1,6,scouting,"None","",5.73,32.53
+6,1207,40.590961,40.639053,5.000000,False,1,6,scouting,"None","",5.74,39.05
+7,1408,40.543168,40.590961,5.000000,False,1,6,scouting,"None","",5.82,45.65
+8,1609,40.497215,40.543168,5.000000,False,1,6,scouting,"None","",5.76,52.18
+9,1810,40.453935,40.497215,5.000000,False,1,6,scouting,"None","",5.78,58.74
+10,2011,40.411725,40.453935,5.000000,False,1,6,scouting,"None","",5.80,65.33
+11,2212,44.442224,40.411725,5.000000,False,1,6,focused_fire,"0x233c","",5.76,71.89
+12,2413,43.966580,40.411725,5.000000,False,1,6,focused_fire,"0x233c","",5.85,77.74
+13,2614,43.528739,40.411725,5.000000,False,1,6,focused_fire,"0x233c","",5.81,83.56
+14,2815,43.136638,40.411725,5.000000,False,1,6,focused_fire,"0x233c","",5.77,89.33
+15,3016,42.753175,40.411725,5.000000,False,1,6,focused_fire,"0x233c","",5.90,95.23
+16,3217,42.400184,40.411725,5.000000,False,1,6,focused_fire,"0x233c","",5.78,101.02
+17,3418,42.016534,40.411725,5.000000,False,1,6,focused_fire,"0x233c","",5.92,106.94
+18,3619,41.654574,40.411725,5.000000,False,1,6,focused_fire,"0x233c","",5.77,112.72
+19,3820,41.281615,40.411725,5.000000,False,1,6,focused_fire,"0x233c","",5.76,118.47
+20,4021,40.914389,40.411725,5.000000,False,1,6,focused_fire,"0x233c","",5.85,124.32
+21,4222,30.799619,40.411725,5.000000,False,1,6,focused_fire,"0x233c","",5.71,130.03
+22,4423,30.438426,30.799619,5.000000,False,1,6,focused_fire,"0x233c","",5.73,136.54
+23,4624,30.190450,30.438426,5.000000,False,2,6,focused_fire,"0x233c","",5.76,143.09
+24,4825,30.174233,30.190450,5.000000,False,2,6,focused_fire,"0x233c","",5.78,149.65
+25,5026,30.158274,30.174233,5.000000,False,2,6,focused_fire,"0x233c","",5.84,156.27
+26,5227,30.143213,30.158274,5.000000,False,2,6,scouting,"None","",5.75,162.81
+27,5428,30.127224,30.143213,5.000000,False,2,6,scouting,"None","",5.82,169.41
+28,5629,30.112759,30.127224,5.000000,False,2,6,scouting,"None","",5.81,175.99
+29,5830,30.098190,30.112759,5.000000,False,2,6,scouting,"None","",5.78,182.56
+30,6031,30.083722,30.098190,5.000000,False,2,6,scouting,"None","",5.75,189.10
+31,6232,30.069492,30.083722,5.000000,False,2,6,scouting,"None","",5.75,195.62
+32,6433,30.054881,30.069492,5.000000,True,2,6,scouting,"None","{"0x2318": {"loss": 10.0, "satisfied": false}, "0x2324": {"loss": 10.0, "satisfied": false}, "0x233c": {"loss": 0.0, "satisfied": true}, "0x2348": {"loss": 10.0, "satisfied": false}, "0x2358": {"loss": 0.0025, "satisfied": true}, "0x2364": {"loss": 0.047381, "satisfied": false}}",5.87,202.26

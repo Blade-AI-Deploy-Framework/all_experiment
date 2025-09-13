@@ -1,0 +1,27 @@
+[
+    {
+        "address": "0x2260",
+        "instruction": "cbnz w8,LAB_00102340",
+        "branch_instruction": "cbnz"
+    },
+    {
+        "address": "0x2278",
+        "instruction": "fcmp s0,s1",
+        "branch_instruction": "b.le"
+    },
+    {
+        "address": "0x2388",
+        "instruction": "cbnz x8,LAB_00102420",
+        "branch_instruction": "cbnz"
+    },
+    {
+        "address": "0x23b0",
+        "instruction": "subs w8,w8,#0x1",
+        "branch_instruction": "b.ne"
+    },
+    {
+        "address": "0x2400",
+        "instruction": "cbz x8,LAB_00102418",
+        "branch_instruction": "cbz"
+    }
+]

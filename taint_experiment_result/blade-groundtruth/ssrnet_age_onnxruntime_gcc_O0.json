@@ -1,0 +1,12 @@
+[
+		{
+				"address": "0x22dc",
+				"instruction": "fcmpe s0, s1",
+				"branch_instruction": "b.ge"
+		},
+		{
+				"address": "0x22f4",
+				"instruction": "fcmpe s0, s1",
+				"branch_instruction": "b.ls"
+		}
+]

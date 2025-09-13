@@ -1,0 +1,73 @@
+# --- Attack Parameters ---
+# {
+#     "executable": "/temp/resources/execution_files/ssrnet_age_mnn",
+#     "image": "/img_align_celeba/142349.jpg",
+#     "hooks": "/temp/hook_config/ssrnet_age_mnn_hook_config.json",
+#     "model": [
+#         "/temp/resources/models/ssrnet_age.mnn"
+#     ],
+#     "models": null,
+#     "iterations": 200,
+#     "learning_rate": 2.0,
+#     "l_inf_norm": 16.0,
+#     "lr_decay_rate": 0.97,
+#     "lr_decay_steps": 50,
+#     "missing_hook_penalty": 10.0,
+#     "margin": 0.05,
+#     "population_size": 200,
+#     "sigma": 0.6,
+#     "enable_stagnation_decay": true,
+#     "stagnation_patience": 20,
+#     "min_loss_delta": 0.001,
+#     "enable_fitness_shaping": true,
+#     "adam_beta1": 0.9,
+#     "adam_beta2": 0.999,
+#     "adam_epsilon": 1e-08,
+#     "enable_dynamic_focus": true,
+#     "evaluation_window": 10,
+#     "boost_weight": 12.0,
+#     "non_target_weight": 1.0,
+#     "satisfied_weight": 3.0,
+#     "satisfaction_threshold": 0.01,
+#     "satisfaction_patience": 3,
+#     "raw_args_template": null,
+#     "workers": 64,
+#     "output_dir": "/temp/outputs/ssrnet_age_mnn_attack_results/142349_attacked",
+#     "model_paths": [
+#         "/temp/resources/models/ssrnet_age.mnn"
+#     ]
+# }
+# -----------------------
+
+iteration,total_queries,loss,best_loss,lr,is_successful_iter,num_satisfied_hooks,total_hooks,attack_mode,focus_targets,hook_details,iter_time_s,total_time_s
+1,202,30.321584,inf,2.000000,False,0,2,scouting,"None","",4.35,4.75
+2,403,29.464867,30.321584,2.000000,False,0,2,scouting,"None","",4.30,9.49
+3,604,28.648669,29.464867,2.000000,False,0,2,scouting,"None","",4.31,14.25
+4,805,27.969220,28.648669,2.000000,False,0,2,scouting,"None","",4.24,18.94
+5,1006,27.312508,27.969220,2.000000,False,0,2,scouting,"None","",4.29,23.67
+6,1207,26.700768,27.312508,2.000000,False,0,2,scouting,"None","",4.30,28.41
+7,1408,26.120618,26.700768,2.000000,False,0,2,scouting,"None","",4.35,33.22
+8,1609,25.605794,26.120618,2.000000,False,0,2,scouting,"None","",4.28,37.95
+9,1810,24.989003,25.605794,2.000000,False,0,2,scouting,"None","",4.33,42.72
+10,2011,24.368375,24.989003,2.000000,False,0,2,scouting,"None","",4.29,47.46
+11,2212,175.467569,24.368375,2.000000,False,0,2,focused_fire,"0x1ff0","",4.28,52.19
+12,2413,167.285318,24.368375,2.000000,False,0,2,focused_fire,"0x1ff0","",4.27,56.47
+13,2614,158.956445,24.368375,2.000000,False,0,2,focused_fire,"0x1ff0","",4.38,60.84
+14,2815,152.082392,24.368375,2.000000,False,0,2,focused_fire,"0x1ff0","",4.32,65.16
+15,3016,143.612436,24.368375,2.000000,False,0,2,focused_fire,"0x1ff0","",4.30,69.46
+16,3217,135.287684,24.368375,2.000000,False,0,2,focused_fire,"0x1ff0","",4.33,73.80
+17,3418,127.975366,24.368375,2.000000,False,0,2,focused_fire,"0x1ff0","",4.29,78.09
+18,3619,119.845484,24.368375,2.000000,False,0,2,focused_fire,"0x1ff0","",4.31,82.40
+19,3820,111.703424,24.368375,2.000000,False,0,2,focused_fire,"0x1ff0","",4.30,86.70
+20,4021,102.687128,24.368375,2.000000,False,0,2,focused_fire,"0x1ff0","",4.27,90.97
+21,4222,93.094644,24.368375,2.000000,False,0,2,focused_fire,"0x1ff0","",4.40,95.37
+22,4423,84.308374,24.368375,2.000000,False,0,2,focused_fire,"0x1ff0","",4.26,99.64
+23,4624,75.624094,24.368375,2.000000,False,0,2,focused_fire,"0x1ff0","",4.30,103.94
+24,4825,68.436425,24.368375,2.000000,False,0,2,focused_fire,"0x1ff0","",4.27,108.20
+25,5026,60.850000,24.368375,2.000000,False,0,2,focused_fire,"0x1ff0","",4.29,112.50
+26,5227,52.063868,24.368375,2.000000,False,0,2,focused_fire,"0x1ff0","",4.32,116.82
+27,5428,42.786096,24.368375,2.000000,False,0,2,focused_fire,"0x1ff0","",4.25,121.08
+28,5629,33.958444,24.368375,2.000000,False,0,2,focused_fire,"0x1ff0","",4.37,125.45
+29,5830,26.291543,24.368375,2.000000,False,0,2,focused_fire,"0x1ff0","",4.29,129.74
+30,6031,17.075342,24.368375,2.000000,False,0,2,focused_fire,"0x1ff0","",4.29,134.04
+31,6232,0.000000,17.075342,2.000000,True,2,2,focused_fire,"0x1ff0","{"0x1ff0": {"loss": 0.0, "satisfied": true}, "0x2004": {"loss": 0.0, "satisfied": true}}",4.34,138.83

@@ -1,0 +1,62 @@
+[
+    {
+        "address":"0x2088",
+        "instruction":"fcmpe s0, s1",
+        "branch_instruction":"b.gt"
+    },
+    {
+        "address":"0x20a4",
+        "instruction":"fcmpe s0, s1",
+        "branch_instruction":"b.mi"
+    },
+    {
+        "address":"0x20e8",
+        "instruction":"cmp x0,#0x0",
+        "branch_instruction":"b.eq"
+    },
+    {
+        "address": "0x2104",
+        "instruction":"cmp w0,#0x1",
+        "branch_instruction":"b.ne"
+    },
+    {
+        "address": "0x211c",
+        "instruction":"cmp x0,#0x0",
+        "branch_instruction":"b.eq"
+    },
+    {
+        "address": "0x212c",
+        "instruction":"cmp x0,#0x0",
+        "branch_instruction":"b.eq"
+    },
+    {
+        "address": "0x2178",
+        "instruction":"cmp x0,#0x0",
+        "branch_instruction":"b.eq"
+    },
+    {
+        "address": "0x21fc",
+        "instruction":"cmp x0,#0x0",
+        "branch_instruction":"b.eq"
+    },
+    {
+        "address": "0x2218",
+        "instruction":"cmp x0,#0x1",
+        "branch_instruction":"b.ne"
+    },
+    {
+        "address": "0x2230",
+        "instruction":"cmp x0,#0x0",
+        "branch_instruction":"b.eq"
+    },
+    {
+        "address": "0x2240",
+        "instruction":"cmp x0,#0x0",
+        "branch_instruction":"b.eq"
+    },
+    {
+        "address": "0x228c",
+        "instruction":"cmp x0,#0x0",
+        "branch_instruction":"b.eq"
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "address": "0x21ac", 
+        "branch_instruction": "b.le", 
+        "instruction": "fcmp s0,s1"
+    }, 
+    {
+        "address": "0x21c8", 
+        "branch_instruction": "b.pl", 
+        "instruction": "fcmp s0,s1"
+    },
+    {
+        "address": "0x22b8",
+        "branch_instruction": "b.eq",
+        "instruction": "cbz x8,LAB_00102348"
+    },
+    {
+        "address": "0x22e0",
+        "branch_instruction": "b.eq",
+        "instruction": "subs w8,w8,#0x1"
+    },
+    {
+        "address": "0x22f4",
+        "branch_instruction": "b.eq",
+        "instruction": "cbz x8,LAB_0010231c"
+    },
+    {
+        "address": "0x232c",
+        "branch_instruction": "b.eq",
+        "instruction": "cbz x8,LAB_00102340"
+    },
+    {
+        "address": "0x23a0",
+        "branch_instruction": "b.eq",
+        "instruction": "cbz x8,LAB_001023c4"
+    },
+    {
+        "address": "0x23c8",
+        "branch_instruction": "b.eq",
+        "instruction": "cbz x8,LAB_001023dc"
+    },
+    {
+        "address": "0x23c8",
+        "branch_instruction": "b.ne",
+        "instruction": "subs w8,w8,#0x1"
+    },
+    {
+        "address": "0x23dc",
+        "branch_instruction": "b.eq",
+        "instruction": "cbz x8,LAB_00102404"
+    },
+    {
+        "address": "0x2414",
+        "branch_instruction": "b.eq",
+        "instruction": "cbz x8,LAB_00102428"
+    }
+]

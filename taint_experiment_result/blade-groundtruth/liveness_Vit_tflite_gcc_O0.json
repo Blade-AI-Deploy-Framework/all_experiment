@@ -1,0 +1,12 @@
+[
+    {
+        "address": "0x2ffc",
+        "instruction": "cmp w0,#0x0",
+        "branch_instruction": "b.ne"
+    },
+    {
+        "address": "0x3014",
+        "instruction": "fcmp s0,s1",
+        "branch_instruction": "b.gt"
+    }
+]

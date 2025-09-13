@@ -1,0 +1,54 @@
+# --- Attack Parameters ---
+# {
+#     "executable": "/temp/resources/execution_files/emotion_ferplus_mnn",
+#     "image": "/img_align_celeba/039089.jpg",
+#     "hooks": "/temp/hook_config/emotion_ferplus_mnn_hook_config.json",
+#     "model": [
+#         "/temp/resources/models/emotion_ferplus.mnn"
+#     ],
+#     "models": null,
+#     "iterations": 200,
+#     "learning_rate": 2.0,
+#     "l_inf_norm": 16.0,
+#     "lr_decay_rate": 0.97,
+#     "lr_decay_steps": 50,
+#     "missing_hook_penalty": 10.0,
+#     "margin": 0.05,
+#     "population_size": 200,
+#     "sigma": 0.6,
+#     "enable_stagnation_decay": true,
+#     "stagnation_patience": 20,
+#     "min_loss_delta": 0.001,
+#     "enable_fitness_shaping": true,
+#     "adam_beta1": 0.9,
+#     "adam_beta2": 0.999,
+#     "adam_epsilon": 1e-08,
+#     "enable_dynamic_focus": true,
+#     "evaluation_window": 10,
+#     "boost_weight": 12.0,
+#     "non_target_weight": 1.0,
+#     "satisfied_weight": 3.0,
+#     "satisfaction_threshold": 0.01,
+#     "satisfaction_patience": 3,
+#     "raw_args_template": null,
+#     "workers": 64,
+#     "output_dir": "/temp/outputs/emotion_ferplus_mnn_attack_results/039089_attacked",
+#     "model_paths": [
+#         "/temp/resources/models/emotion_ferplus.mnn"
+#     ]
+# }
+# -----------------------
+
+iteration,total_queries,loss,best_loss,lr,is_successful_iter,num_satisfied_hooks,total_hooks,attack_mode,focus_targets,hook_details,iter_time_s,total_time_s
+1,202,10.117349,inf,2.000000,False,0,2,scouting,"None","",5.79,6.30
+2,403,10.071231,10.117349,2.000000,False,0,2,scouting,"None","",5.95,12.95
+3,604,0.350329,10.071231,2.000000,False,0,2,scouting,"None","",5.90,19.55
+4,805,0.274063,0.350329,2.000000,False,1,2,scouting,"None","",5.67,25.92
+5,1006,0.230327,0.274063,2.000000,False,1,2,scouting,"None","",5.83,32.47
+6,1207,0.186683,0.230327,2.000000,False,1,2,scouting,"None","",5.82,38.99
+7,1408,0.159111,0.186683,2.000000,False,1,2,scouting,"None","",5.79,45.49
+8,1609,0.129255,0.159111,2.000000,False,1,2,scouting,"None","",5.84,52.05
+9,1810,0.102011,0.129255,2.000000,False,1,2,scouting,"None","",5.88,58.63
+10,2011,0.082301,0.102011,2.000000,False,1,2,scouting,"None","",5.77,65.10
+11,2212,0.724886,0.082301,2.000000,False,1,2,focused_fire,"0x2244","",5.82,71.63
+12,2413,0.488693,0.082301,2.000000,True,1,2,focused_fire,"0x2244","{"0x222c": {"loss": 0.0, "satisfied": true}, "0x2244": {"loss": 0.040724, "satisfied": false}}",5.83,77.47

@@ -1,0 +1,103 @@
+[
+    {
+        "address": "0x22f0",
+        "instruction": "fcmpe s1, s0",
+        "branch_instruction": "b.mi"
+    },
+    {
+        "address": "0x230c",
+        "instruction": "fcmpe s1, s0",
+        "branch_instruction": "b.mi"
+    },
+    {
+        "address": "0x2328",
+        "instruction": "fcmpe s1, s0",
+        "branch_instruction": "b.mi"
+    },
+    {
+        "address": "0x2398", 
+        "branch_instruction": "b.ne", 
+        "instruction": "cmp w0,#0x1"
+    },
+    {
+        "address": "0x2344", 
+        "branch_instruction": "b.eq", 
+        "instruction": "cmp w0,#0x0"
+    }, 
+    {
+        "address": "0x237c", 
+        "branch_instruction": "b.eq", 
+        "instruction": "cmp x0,#0x0"
+    }, 
+    {
+        "address": "0x2398", 
+        "branch_instruction": "b.ne", 
+        "instruction": "cmp w0,#0x1"
+    }, 
+    {
+        "address": "0x23b0", 
+        "branch_instruction": "b.eq", 
+        "instruction": "cmp w0,#0x0"
+    }, 
+    {
+        "address": "0x23c0", 
+        "branch_instruction": "b.eq", 
+        "instruction": "cmp x0,#0x0"
+    }, 
+    {
+        "address": "0x240c", 
+        "branch_instruction": "b.eq", 
+        "instruction": "cmp x0,#0x0"
+    }, 
+    {
+        "address": "0x2490", 
+        "branch_instruction": "b.eq", 
+        "instruction": "cmp x0,#0x0"
+    }, 
+    {
+        "address": "0x24ac", 
+        "branch_instruction": "b.ne", 
+        "instruction": "cmp w0,#0x1"
+    }, 
+    {
+        "address": "0x24c4", 
+        "branch_instruction": "b.eq", 
+        "instruction": "cmp w0,#0x0"
+    }, 
+    {
+        "address": "0x24d4", 
+        "branch_instruction": "b.eq", 
+        "instruction": "cmp x0,#0x0"
+    }, 
+    {
+        "address": "0x2520", 
+        "branch_instruction": "b.eq", 
+        "instruction": "cmp x0,#0x0"
+    }, 
+    {
+        "address": "0x25a4", 
+        "branch_instruction": "b.eq", 
+        "instruction": "cmp x0,#0x0"
+    }, 
+    {
+        "address": "0x25c0", 
+        "branch_instruction": "b.ne", 
+        "instruction": "cmp w0,#0x1"
+    }, 
+    {
+        "address": "0x25d8", 
+        "branch_instruction": "b.eq", 
+        "instruction": "cmp w0,#0x0"
+    }, 
+    {
+        "address": "0x25e8", 
+        "branch_instruction": "b.eq", 
+        "instruction": "cmp x0,#0x0"
+    }, 
+    {
+        "address": "0x2634", 
+        "branch_instruction": "b.eq", 
+        "instruction": "cmp x0,#0x0"
+    }
+    
+]

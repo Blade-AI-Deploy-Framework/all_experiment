@@ -1,0 +1,75 @@
+# --- Attack Parameters ---
+# {
+#     "executable": "./resources/execution_files/age_googlenet_mnn",
+#     "image": "/img_align_celeba/153522.jpg",
+#     "hooks": "/temp/hook_config/age_googlenet_mnn_hook_config.json",
+#     "model": [
+#         "/temp/resources/models/age_googlenet.mnn"
+#     ],
+#     "models": null,
+#     "iterations": 100,
+#     "learning_rate": 5.0,
+#     "l_inf_norm": 30.0,
+#     "lr_decay_rate": 0.97,
+#     "lr_decay_steps": 50,
+#     "missing_hook_penalty": 10.0,
+#     "margin": 0.05,
+#     "population_size": 200,
+#     "sigma": 0.6,
+#     "enable_stagnation_decay": true,
+#     "stagnation_patience": 20,
+#     "min_loss_delta": 0.001,
+#     "enable_fitness_shaping": true,
+#     "adam_beta1": 0.9,
+#     "adam_beta2": 0.999,
+#     "adam_epsilon": 1e-08,
+#     "enable_dynamic_focus": true,
+#     "evaluation_window": 10,
+#     "boost_weight": 12.0,
+#     "non_target_weight": 1.0,
+#     "satisfied_weight": 3.0,
+#     "satisfaction_threshold": 0.01,
+#     "satisfaction_patience": 3,
+#     "raw_args_template": null,
+#     "workers": 64,
+#     "output_dir": "/temp/outputs/age_googlenet_mnn_attack_results/153522_attacked",
+#     "model_paths": [
+#         "/temp/resources/models/age_googlenet.mnn"
+#     ]
+# }
+# -----------------------
+
+iteration,total_queries,loss,best_loss,lr,is_successful_iter,num_satisfied_hooks,total_hooks,attack_mode,focus_targets,hook_details,iter_time_s,total_time_s
+1,202,40.885141,inf,5.000000,False,1,6,scouting,"None","",5.82,6.38
+2,403,40.870038,40.885141,5.000000,False,1,6,scouting,"None","",5.77,12.93
+3,604,40.853934,40.870038,5.000000,False,1,6,scouting,"None","",5.77,19.48
+4,805,40.837784,40.853934,5.000000,False,1,6,scouting,"None","",5.83,26.08
+5,1006,40.818215,40.837784,5.000000,False,1,6,scouting,"None","",5.78,32.65
+6,1207,40.798475,40.818215,5.000000,False,1,6,scouting,"None","",5.74,39.17
+7,1408,40.776156,40.798475,5.000000,False,1,6,scouting,"None","",5.87,45.83
+8,1609,40.753624,40.776156,5.000000,False,1,6,scouting,"None","",5.78,52.38
+9,1810,40.733637,40.753624,5.000000,False,1,6,scouting,"None","",5.77,58.94
+10,2011,40.710850,40.733637,5.000000,False,1,6,scouting,"None","",5.78,65.50
+11,2212,48.271688,40.710850,5.000000,False,1,6,focused_fire,"0x233c","",5.79,72.07
+12,2413,48.017440,40.710850,5.000000,False,1,6,focused_fire,"0x233c","",5.78,77.85
+13,2614,47.742997,40.710850,5.000000,False,1,6,focused_fire,"0x233c","",5.81,83.66
+14,2815,47.444875,40.710850,5.000000,False,1,6,focused_fire,"0x233c","",5.67,89.33
+15,3016,47.123497,40.710850,5.000000,False,1,6,focused_fire,"0x233c","",5.88,95.22
+16,3217,46.787804,40.710850,5.000000,False,1,6,focused_fire,"0x233c","",5.80,101.03
+17,3418,46.392620,40.710850,5.000000,False,1,6,focused_fire,"0x233c","",5.81,106.84
+18,3619,45.971622,40.710850,5.000000,False,1,6,focused_fire,"0x233c","",5.83,112.67
+19,3820,45.542894,40.710850,5.000000,False,1,6,focused_fire,"0x233c","",5.83,118.50
+20,4021,45.086820,40.710850,5.000000,False,1,6,focused_fire,"0x233c","",5.78,124.28
+21,4222,44.617585,40.710850,5.000000,False,1,6,focused_fire,"0x233c","",5.73,130.01
+22,4423,44.177212,40.710850,5.000000,False,1,6,focused_fire,"0x233c","",5.84,135.86
+23,4624,43.712796,40.710850,5.000000,False,1,6,focused_fire,"0x233c","",5.81,141.67
+24,4825,43.219937,40.710850,5.000000,False,1,6,focused_fire,"0x233c","",5.77,147.45
+25,5026,42.717268,40.710850,5.000000,False,1,6,focused_fire,"0x233c","",5.77,153.22
+26,5227,42.222407,40.710850,5.000000,False,1,6,focused_fire,"0x233c","",5.86,159.09
+27,5428,41.733848,40.710850,5.000000,False,1,6,focused_fire,"0x233c","",5.79,164.88
+28,5629,41.244938,40.710850,5.000000,False,1,6,focused_fire,"0x233c","",5.77,170.65
+29,5830,40.758353,40.710850,5.000000,False,1,6,focused_fire,"0x233c","",5.81,176.47
+30,6031,30.434487,40.710850,5.000000,False,1,6,focused_fire,"0x233c","",5.77,182.24
+31,6232,30.091196,30.434487,5.000000,False,2,6,focused_fire,"0x233c","",5.77,188.80
+32,6433,30.070709,30.091196,5.000000,False,2,6,focused_fire,"0x233c","",5.81,195.38
+33,6634,30.050084,30.070709,5.000000,True,2,6,focused_fire,"0x233c","{"0x2318": {"loss": 10.0, "satisfied": false}, "0x2324": {"loss": 10.0, "satisfied": false}, "0x233c": {"loss": 0.0, "satisfied": true}, "0x2348": {"loss": 10.0, "satisfied": false}, "0x2358": {"loss": 0.0025, "satisfied": true}, "0x2364": {"loss": 0.042584, "satisfied": false}}",5.78,201.94

@@ -1,0 +1,183 @@
+[
+    {
+        "address": "0x20f4", 
+        "original_branch_instruction": "b.ne", 
+        "branch_target": "0x2128", 
+        "instruction": "cmp w0,#0x0", 
+        "registers": [
+            {
+                "register": "w0"
+            }, 
+            {
+                "register": "0x0"
+            }
+        ], 
+        "original_branch_address": "0x20f8"
+    }, 
+    {
+        "address": "0x210c", 
+        "original_branch_instruction": "b.gt", 
+        "branch_target": "0x2118", 
+        "instruction": "fcmpe s0,s1", 
+        "registers": [
+            {
+                "register": "s0"
+            }, 
+            {
+                "register": "0x3f666666"
+            }
+        ], 
+        "original_branch_address": "0x2110"
+    }, 
+    {
+        "address": "0x2150", 
+        "original_branch_instruction": "b.eq", 
+        "branch_target": "0x217c", 
+        "instruction": "cmp x0,#0x0", 
+        "registers": [
+            {
+                "register": "local_1f8(StackDirect[Stack[-0x1f8]])"
+            }, 
+            {
+                "register": "0x0"
+            }
+        ], 
+        "original_branch_address": "0x2154"
+    }, 
+    {
+        "address": "0x216c", 
+        "original_branch_instruction": "b.ne", 
+        "branch_target": "0x217c", 
+        "instruction": "cmp w0,#0x1", 
+        "registers": [
+            {
+                "register": "w0"
+            }, 
+            {
+                "register": "0x1"
+            }
+        ], 
+        "original_branch_address": "0x2170"
+    }, 
+    {
+        "address": "0x2184", 
+        "original_branch_instruction": "b.eq", 
+        "branch_target": "0x21f4", 
+        "instruction": "cmp w0,#0x0", 
+        "registers": [], 
+        "original_branch_address": "0x2188"
+    }, 
+    {
+        "address": "0x2194", 
+        "original_branch_instruction": "b.eq", 
+        "branch_target": "0x21d0", 
+        "instruction": "cmp x0,#0x0", 
+        "registers": [
+            {
+                "register": "x0"
+            }, 
+            {
+                "register": "0x0"
+            }
+        ], 
+        "original_branch_address": "0x2198"
+    }, 
+    {
+        "address": "0x21e0", 
+        "original_branch_instruction": "b.eq", 
+        "branch_target": "0x21f0", 
+        "instruction": "cmp x0,#0x0", 
+        "registers": [
+            {
+                "register": "local_298(StackDirect[Stack[-0x298]])"
+            }, 
+            {
+                "register": "0x0"
+            }
+        ], 
+        "original_branch_address": "0x21e4"
+    }, 
+    {
+        "address": "0x2264", 
+        "original_branch_instruction": "b.eq", 
+        "branch_target": "0x2290", 
+        "instruction": "cmp x0,#0x0", 
+        "registers": [
+            {
+                "register": "local_240(StackDirect[Stack[-0x240]])"
+            }, 
+            {
+                "register": "0x0"
+            }
+        ], 
+        "original_branch_address": "0x2268"
+    }, 
+    {
+        "address": "0x2280", 
+        "original_branch_instruction": "b.ne", 
+        "branch_target": "0x2290", 
+        "instruction": "cmp w0,#0x1", 
+        "registers": [
+            {
+                "register": "w0"
+            }, 
+            {
+                "register": "0x1"
+            }
+        ], 
+        "original_branch_address": "0x2284"
+    }, 
+    {
+        "address": "0x2298", 
+        "original_branch_instruction": "b.eq", 
+        "branch_target": "0x2308", 
+        "instruction": "cmp w0,#0x0", 
+        "registers": [], 
+        "original_branch_address": "0x229c"
+    }, 
+    {
+        "address": "0x22a8", 
+        "original_branch_instruction": "b.eq", 
+        "branch_target": "0x22e4", 
+        "instruction": "cmp x0,#0x0", 
+        "registers": [
+            {
+                "register": "x0"
+            }, 
+            {
+                "register": "0x0"
+            }
+        ], 
+        "original_branch_address": "0x22ac"
+    }, 
+    {
+        "address": "0x22f4", 
+        "original_branch_instruction": "b.eq", 
+        "branch_target": "0x2304", 
+        "instruction": "cmp x0,#0x0", 
+        "registers": [
+            {
+                "register": "local_2a8(StackDirect[Stack[-0x2a8]])"
+            }, 
+            {
+                "register": "0x0"
+            }
+        ], 
+        "original_branch_address": "0x22f8"
+    }, 
+    {
+        "address": "0x23a4", 
+        "original_branch_instruction": "b.eq", 
+        "branch_target": "0x26f4", 
+        "instruction": "subs x3,x3,x2", 
+        "registers": [
+            {
+                "register": "UNNAMED(UniquePcode[0x3e480])"
+            }, 
+            {
+                "register": "0x0"
+            }
+        ], 
+        "original_branch_address": "0x23ac"
+    }
+]

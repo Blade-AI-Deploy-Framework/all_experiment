@@ -1,0 +1,32 @@
+[
+    {
+        "address": "0x20f4",
+        "instruction": "cmp w0,#0x0",
+        "branch_instruction": "b.ne"
+    },
+    {
+        "address": "0x210c",
+        "instruction": "fcmp s0,s1",
+        "branch_instruction": "b.gt"
+    },
+    {
+        "address": "0x2150",
+        "instruction": "cmp x0,#0x0",
+        "branch_instruction": "b.eq"
+    },
+    {
+        "address": "0x216c",
+        "instruction": "cmp w0,#0x1",
+        "branch_instruction": "b.ne"
+    },
+    {
+        "address": "0x2184",
+        "instruction": "cmp w0,#0x0",
+        "branch_instruction": "b.eq"
+    },
+    {
+        "address": "0x21e0",
+        "instruction": "cmp w0,#0x0",
+        "branch_instruction": "b.eq"
+    }
+]

@@ -1,0 +1,29 @@
+{
+    "status": "SUCCESS",
+    "config": {
+        "executable": "./resources/execution_files/emotion_ferplus_mnn",
+        "benign_image": "/img_align_celeba/017412.jpg",
+        "initial_adv_image": "/img_align_celeba/000608.jpg",
+        "l2_epsilon_goal": 0.05,
+        "linf_epsilon_goal": 0.06274509803921569,
+        "query_budget": 40000,
+        "max_iterations": 1000,
+        "initial_queries": 50,
+        "dimension_reduction": 1.0
+    },
+    "results": {
+        "total_queries": 723,
+        "final_l2_distance": 3.714754104614258,
+        "final_linf_distance": 0.04978850483894348,
+        "total_duration_seconds": 41.85859203338623,
+        "iteration_times_seconds": [
+            5.9318602085113525,
+            6.0829057693481445,
+            6.280855894088745,
+            6.459254503250122,
+            6.26116681098938,
+            6.412572383880615
+        ],
+        "output_image_path": "/model_deploy_execution_attack_for_pipeline/outputs/emotion_ferplus_mnn_017412_ttba_attack/adversarial_image.png"
+    }
+}

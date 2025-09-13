@@ -1,0 +1,12 @@
+[
+    {
+        "address":"0x2498",
+        "instruction":"fcmpe s0, s1",
+        "branch_instruction":"b.gt"
+    },
+    {
+        "address":"0x24b4",
+        "instruction":"fcmpe s0, s1",
+        "branch_instruction":"b.mi"
+    }
+]

@@ -1,0 +1,71 @@
+# --- Attack Parameters ---
+# {
+#     "executable": "./resources/execution_files/age_googlenet_mnn",
+#     "image": "/img_align_celeba/088440.jpg",
+#     "hooks": "/temp/hook_config/age_googlenet_mnn_hook_config.json",
+#     "model": [
+#         "/temp/resources/models/age_googlenet.mnn"
+#     ],
+#     "models": null,
+#     "iterations": 100,
+#     "learning_rate": 5.0,
+#     "l_inf_norm": 30.0,
+#     "lr_decay_rate": 0.97,
+#     "lr_decay_steps": 50,
+#     "missing_hook_penalty": 10.0,
+#     "margin": 0.05,
+#     "population_size": 200,
+#     "sigma": 0.6,
+#     "enable_stagnation_decay": true,
+#     "stagnation_patience": 20,
+#     "min_loss_delta": 0.001,
+#     "enable_fitness_shaping": true,
+#     "adam_beta1": 0.9,
+#     "adam_beta2": 0.999,
+#     "adam_epsilon": 1e-08,
+#     "enable_dynamic_focus": true,
+#     "evaluation_window": 10,
+#     "boost_weight": 12.0,
+#     "non_target_weight": 1.0,
+#     "satisfied_weight": 3.0,
+#     "satisfaction_threshold": 0.01,
+#     "satisfaction_patience": 3,
+#     "raw_args_template": null,
+#     "workers": 64,
+#     "output_dir": "/temp/outputs/age_googlenet_mnn_attack_results/088440_attacked",
+#     "model_paths": [
+#         "/temp/resources/models/age_googlenet.mnn"
+#     ]
+# }
+# -----------------------
+
+iteration,total_queries,loss,best_loss,lr,is_successful_iter,num_satisfied_hooks,total_hooks,attack_mode,focus_targets,hook_details,iter_time_s,total_time_s
+1,202,40.828307,inf,5.000000,False,1,6,scouting,"None","",5.80,6.37
+2,403,40.787496,40.828307,5.000000,False,1,6,scouting,"None","",5.77,12.93
+3,604,40.746364,40.787496,5.000000,False,1,6,scouting,"None","",5.83,19.53
+4,805,40.704017,40.746364,5.000000,False,1,6,scouting,"None","",5.74,26.04
+5,1006,40.661833,40.704017,5.000000,False,1,6,scouting,"None","",5.75,32.57
+6,1207,40.612797,40.661833,5.000000,False,1,6,scouting,"None","",5.78,39.12
+7,1408,40.566096,40.612797,5.000000,False,1,6,scouting,"None","",5.79,45.68
+8,1609,40.518724,40.566096,5.000000,False,1,6,scouting,"None","",5.73,52.19
+9,1810,40.469034,40.518724,5.000000,False,1,6,scouting,"None","",5.76,58.72
+10,2011,40.421963,40.469034,5.000000,False,1,6,scouting,"None","",5.73,65.23
+11,2212,44.503579,40.421963,5.000000,False,1,6,focused_fire,"0x233c","",5.75,71.78
+12,2413,44.000649,40.421963,5.000000,False,1,6,focused_fire,"0x233c","",5.75,77.52
+13,2614,43.497189,40.421963,5.000000,False,1,6,focused_fire,"0x233c","",5.80,83.33
+14,2815,43.043351,40.421963,5.000000,False,1,6,focused_fire,"0x233c","",5.74,89.07
+15,3016,42.602795,40.421963,5.000000,False,1,6,focused_fire,"0x233c","",5.84,94.91
+16,3217,42.181350,40.421963,5.000000,False,1,6,focused_fire,"0x233c","",5.82,100.73
+17,3418,41.776044,40.421963,5.000000,False,1,6,focused_fire,"0x233c","",5.82,106.55
+18,3619,41.396555,40.421963,5.000000,False,1,6,focused_fire,"0x233c","",5.82,112.38
+19,3820,41.004708,40.421963,5.000000,False,1,6,focused_fire,"0x233c","",5.75,118.13
+20,4021,40.624031,40.421963,5.000000,False,1,6,focused_fire,"0x233c","",5.78,123.91
+21,4222,30.414502,40.421963,5.000000,False,1,6,focused_fire,"0x233c","",5.80,129.72
+22,4423,30.154779,30.414502,5.000000,False,2,6,focused_fire,"0x233c","",5.73,136.23
+23,4624,30.139895,30.154779,5.000000,False,2,6,focused_fire,"0x233c","",5.87,142.88
+24,4825,30.123095,30.139895,5.000000,False,2,6,focused_fire,"0x233c","",5.82,149.47
+25,5026,30.107286,30.123095,5.000000,False,2,6,scouting,"None","",5.74,156.00
+26,5227,30.091646,30.107286,5.000000,False,2,6,scouting,"None","",5.82,162.59
+27,5428,30.074598,30.091646,5.000000,False,2,6,scouting,"None","",5.76,169.14
+28,5629,30.057864,30.074598,5.000000,False,2,6,scouting,"None","",5.76,175.68
+29,5830,30.041739,30.057864,5.000000,True,2,6,scouting,"None","{"0x2318": {"loss": 10.0, "satisfied": false}, "0x2324": {"loss": 10.0, "satisfied": false}, "0x233c": {"loss": 0.0, "satisfied": true}, "0x2348": {"loss": 10.0, "satisfied": false}, "0x2358": {"loss": 0.0025, "satisfied": true}, "0x2364": {"loss": 0.034239, "satisfied": false}}",5.72,182.18

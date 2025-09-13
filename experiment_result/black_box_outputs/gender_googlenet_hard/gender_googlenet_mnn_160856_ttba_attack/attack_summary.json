@@ -1,0 +1,37 @@
+{
+    "status": "SUCCESS",
+    "config": {
+        "executable": "./resources/execution_files/gender_googlenet_mnn",
+        "benign_image": "/img_align_celeba/160856.jpg",
+        "initial_adv_image": "/img_align_celeba/101264.jpg",
+        "l2_epsilon_goal": 0.05,
+        "linf_epsilon_goal": 0.06274509803921569,
+        "query_budget": 40000,
+        "max_iterations": 1000,
+        "initial_queries": 50,
+        "dimension_reduction": 1.0
+    },
+    "results": {
+        "total_queries": 2236,
+        "final_l2_distance": 4.221774578094482,
+        "final_linf_distance": 0.053306400775909424,
+        "total_duration_seconds": 93.71692037582397,
+        "iteration_times_seconds": [
+            5.774586915969849,
+            6.158563613891602,
+            6.193692207336426,
+            6.213835954666138,
+            6.235641956329346,
+            6.367672920227051,
+            6.347554922103882,
+            6.5025928020477295,
+            6.489290475845337,
+            6.6345508098602295,
+            6.634956359863281,
+            6.681580543518066,
+            6.719043731689453,
+            6.577089071273804
+        ],
+        "output_image_path": "/model_deploy_execution_attack_for_pipeline/outputs/gender_googlenet_mnn_160856_ttba_attack/adversarial_image.png"
+    }
+}

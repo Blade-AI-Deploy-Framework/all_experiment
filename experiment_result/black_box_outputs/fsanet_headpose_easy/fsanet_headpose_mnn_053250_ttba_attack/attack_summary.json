@@ -1,0 +1,53 @@
+{
+    "status": "SUCCESS",
+    "config": {
+        "executable": "./resources/execution_files/fsanet_headpose_mnn",
+        "benign_image": "/img_align_celeba/053250.jpg",
+        "initial_adv_image": "/img_align_celeba/105002.jpg",
+        "l2_epsilon_goal": 0.05,
+        "linf_epsilon_goal": 0.06274509803921569,
+        "query_budget": 40000,
+        "max_iterations": 1000,
+        "initial_queries": 50,
+        "dimension_reduction": 1.0
+    },
+    "results": {
+        "total_queries": 6436,
+        "final_l2_distance": 4.920166492462158,
+        "final_linf_distance": 0.06182360649108887,
+        "total_duration_seconds": 87.39573550224304,
+        "iteration_times_seconds": [
+            2.605008363723755,
+            2.697214126586914,
+            2.7303202152252197,
+            2.6403181552886963,
+            2.6462414264678955,
+            2.779195785522461,
+            2.8631701469421387,
+            2.8255133628845215,
+            2.826247215270996,
+            2.835968255996704,
+            2.894968032836914,
+            2.795177936553955,
+            2.889207363128662,
+            2.745840072631836,
+            2.953010082244873,
+            2.874486207962036,
+            2.8305726051330566,
+            2.8740625381469727,
+            2.933201551437378,
+            2.9042115211486816,
+            2.8590333461761475,
+            2.8703720569610596,
+            2.8950021266937256,
+            2.868597984313965,
+            2.973036289215088,
+            3.0298781394958496,
+            2.904064416885376,
+            2.954648971557617,
+            3.076096296310425,
+            3.0223591327667236
+        ],
+        "output_image_path": "/model_deploy_execution_attack_for_pipeline/outputs/fsanet_headpose_mnn_053250_ttba_attack/adversarial_image.png"
+    }
+}

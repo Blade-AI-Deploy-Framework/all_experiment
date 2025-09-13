@@ -1,0 +1,75 @@
+# --- Attack Parameters ---
+# {
+#     "attack_type": "zosignsgd",
+#     "executable": "./resources/execution_files/liveness_Vit_mnn",
+#     "image": "/model_deploy_execution_attack/resources/filtered_images/n002059-0088_01.jpg",
+#     "hooks": "/model_deploy_execution_attack/hook_config/liveness_Vit_mnn_hook_config.json",
+#     "model": null,
+#     "models": "/model_deploy_execution_attack/resources/models/liveness_Vit.mnn",
+#     "iterations": 100,
+#     "l_inf_norm": 20.0,
+#     "missing_hook_penalty": 10.0,
+#     "margin": 0.05,
+#     "enable_stagnation_decay": true,
+#     "learning_rate": 5.0,
+#     "lr_decay_rate": 0.97,
+#     "lr_decay_steps": 50,
+#     "stagnation_patience": 20,
+#     "min_loss_delta": 0.001,
+#     "enable_dynamic_focus": false,
+#     "evaluation_window": 10,
+#     "boost_weight": 10.0,
+#     "non_target_weight": 1.0,
+#     "satisfied_weight": 3.0,
+#     "satisfaction_threshold": 0.01,
+#     "satisfaction_patience": 3,
+#     "raw_args_template": null,
+#     "workers": 64,
+#     "output_dir": "/model_deploy_execution_attack/attack_results/liveness_Vit_mnn_zosignsgd_n002059-0088_01_20250911-111404",
+#     "num_queries": 100,
+#     "fd_eta": 0.15,
+#     "model_paths": [
+#         "/model_deploy_execution_attack/resources/models/liveness_Vit.mnn"
+#     ]
+# }
+# -----------------------
+
+iteration,total_queries,loss,best_loss,lr,is_successful_iter,num_satisfied_hooks,total_hooks,attack_mode,focus_targets,hook_details,iter_time_s,total_time_s
+1,103,0.181722,0.106304,5.000000,False,0,1,static,"N/A","",14.51,16.24
+2,205,0.182527,0.106304,5.000000,False,0,1,static,"N/A","",14.68,30.94
+3,307,0.164421,0.106304,5.000000,False,0,1,static,"N/A","",14.68,45.63
+4,409,0.152617,0.106304,5.000000,False,0,1,static,"N/A","",14.67,60.31
+5,511,0.146559,0.106304,5.000000,False,0,1,static,"N/A","",14.76,75.09
+6,613,0.153354,0.106304,5.000000,False,0,1,static,"N/A","",15.02,90.13
+7,715,0.138867,0.106304,5.000000,False,0,1,static,"N/A","",14.85,104.99
+8,817,0.131851,0.106304,5.000000,False,0,1,static,"N/A","",14.76,119.77
+9,919,0.129133,0.106304,5.000000,False,0,1,static,"N/A","",14.71,134.49
+10,1021,0.119617,0.106304,5.000000,False,0,1,static,"N/A","",14.87,149.38
+11,1123,0.118126,0.106304,5.000000,False,0,1,static,"N/A","",14.82,164.21
+12,1225,0.112898,0.106304,5.000000,False,0,1,static,"N/A","",14.57,178.79
+13,1327,0.110691,0.106304,5.000000,False,0,1,static,"N/A","",14.72,193.53
+14,1429,0.112888,0.106304,5.000000,False,0,1,static,"N/A","",14.95,208.49
+15,1531,0.106041,0.106304,5.000000,False,0,1,static,"N/A","",14.67,223.17
+16,1633,0.101198,0.106041,5.000000,False,0,1,static,"N/A","",14.64,237.83
+17,1735,0.100637,0.101198,5.000000,False,0,1,static,"N/A","",14.79,252.65
+18,1837,0.096022,0.100637,5.000000,False,0,1,static,"N/A","",14.74,267.41
+19,1939,0.095677,0.096022,5.000000,False,0,1,static,"N/A","",14.69,282.13
+20,2041,0.079957,0.095677,5.000000,False,0,1,static,"N/A","",14.74,296.90
+21,2143,0.076397,0.079957,5.000000,False,0,1,static,"N/A","",14.71,311.64
+22,2245,0.080372,0.076397,5.000000,False,0,1,static,"N/A","",14.85,326.52
+23,2347,0.069688,0.076397,5.000000,False,0,1,static,"N/A","",14.96,341.48
+24,2449,0.063193,0.069688,5.000000,False,0,1,static,"N/A","",14.65,356.16
+25,2551,0.061264,0.063193,5.000000,False,0,1,static,"N/A","",14.66,370.85
+26,2653,0.058046,0.061264,5.000000,False,0,1,static,"N/A","",14.80,385.68
+27,2755,0.053409,0.058046,5.000000,False,0,1,static,"N/A","",14.78,400.48
+28,2857,0.064990,0.053409,5.000000,False,0,1,static,"N/A","",14.88,415.39
+29,2959,0.058979,0.053409,5.000000,False,0,1,static,"N/A","",14.66,430.06
+30,3061,0.061482,0.053409,5.000000,False,0,1,static,"N/A","",14.62,444.69
+31,3163,0.061761,0.053409,5.000000,False,0,1,static,"N/A","",14.69,459.40
+32,3265,0.063181,0.053409,5.000000,False,0,1,static,"N/A","",14.74,474.15
+33,3367,0.061705,0.053409,5.000000,False,0,1,static,"N/A","",14.66,488.82
+34,3469,0.062703,0.053409,5.000000,False,0,1,static,"N/A","",14.56,503.40
+35,3571,0.056309,0.053409,5.000000,False,0,1,static,"N/A","",14.69,518.10
+36,3673,0.056930,0.053409,5.000000,False,0,1,static,"N/A","",14.76,532.88
+37,3775,0.060778,0.053409,5.000000,False,0,1,static,"N/A","",14.71,547.60
+38,3877,0.048096,0.053409,5.000000,True,0,1,static,"N/A","{"0x2d1c": {"loss": 0.048096, "satisfied": false}}",14.73,562.34

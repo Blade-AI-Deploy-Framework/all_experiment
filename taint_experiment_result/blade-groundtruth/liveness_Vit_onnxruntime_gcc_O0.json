@@ -1,0 +1,7 @@
+[
+    {
+        "address": "0x2520",
+        "instruction": "cmp w0,#0x0",
+        "branch_instruction": "b.eq"
+    }
+]

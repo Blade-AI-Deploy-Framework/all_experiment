@@ -1,0 +1,71 @@
+# --- Attack Parameters ---
+# {
+#     "executable": "/temp/resources/execution_files/gender_googlenet_mnn",
+#     "image": "/img_align_celeba/178297.jpg",
+#     "hooks": "/temp/hook_config/gender_googlenet_mnn_hook_config.json",
+#     "model": [
+#         "/temp/resources/models/gender_googlenet.mnn"
+#     ],
+#     "models": null,
+#     "iterations": 200,
+#     "learning_rate": 2.0,
+#     "l_inf_norm": 16.0,
+#     "lr_decay_rate": 0.97,
+#     "lr_decay_steps": 50,
+#     "missing_hook_penalty": 10.0,
+#     "margin": 0.05,
+#     "population_size": 200,
+#     "sigma": 0.6,
+#     "enable_stagnation_decay": true,
+#     "stagnation_patience": 20,
+#     "min_loss_delta": 0.001,
+#     "enable_fitness_shaping": true,
+#     "adam_beta1": 0.9,
+#     "adam_beta2": 0.999,
+#     "adam_epsilon": 1e-08,
+#     "enable_dynamic_focus": true,
+#     "evaluation_window": 10,
+#     "boost_weight": 12.0,
+#     "non_target_weight": 1.0,
+#     "satisfied_weight": 3.0,
+#     "satisfaction_threshold": 0.01,
+#     "satisfaction_patience": 3,
+#     "raw_args_template": null,
+#     "workers": 64,
+#     "output_dir": "/temp/outputs/gender_googlenet_mnn_attack_results/178297_attacked",
+#     "model_paths": [
+#         "/temp/resources/models/gender_googlenet.mnn"
+#     ]
+# }
+# -----------------------
+
+iteration,total_queries,loss,best_loss,lr,is_successful_iter,num_satisfied_hooks,total_hooks,attack_mode,focus_targets,hook_details,iter_time_s,total_time_s
+1,202,40.875184,inf,2.000000,False,1,6,scouting,"None","",5.59,6.10
+2,403,40.856658,40.875184,2.000000,False,1,6,scouting,"None","",5.63,12.42
+3,604,40.833587,40.856658,2.000000,False,1,6,scouting,"None","",5.60,18.71
+4,805,40.814627,40.833587,2.000000,False,1,6,scouting,"None","",5.60,24.98
+5,1006,40.790715,40.814627,2.000000,False,1,6,scouting,"None","",5.59,31.26
+6,1207,40.766430,40.790715,2.000000,False,1,6,scouting,"None","",5.63,37.58
+7,1408,40.741417,40.766430,2.000000,False,1,6,scouting,"None","",5.55,43.81
+8,1609,40.712797,40.741417,2.000000,False,1,6,scouting,"None","",5.66,50.15
+9,1810,40.681845,40.712797,2.000000,False,1,6,scouting,"None","",5.55,56.38
+10,2011,40.649879,40.681845,2.000000,False,1,6,scouting,"None","",5.62,62.68
+11,2212,47.406627,40.649879,2.000000,False,1,6,focused_fire,"0x2054","",5.59,68.96
+12,2413,47.036254,40.649879,2.000000,False,1,6,focused_fire,"0x2054","",5.73,74.69
+13,2614,46.669354,40.649879,2.000000,False,1,6,focused_fire,"0x2054","",5.70,80.39
+14,2815,46.234138,40.649879,2.000000,False,1,6,focused_fire,"0x2054","",5.73,86.12
+15,3016,45.845014,40.649879,2.000000,False,1,6,focused_fire,"0x2054","",5.64,91.76
+16,3217,45.461005,40.649879,2.000000,False,1,6,focused_fire,"0x2054","",5.64,97.41
+17,3418,45.054419,40.649879,2.000000,False,1,6,focused_fire,"0x2054","",5.66,103.07
+18,3619,44.632086,40.649879,2.000000,False,1,6,focused_fire,"0x2054","",5.77,108.84
+19,3820,44.216537,40.649879,2.000000,False,1,6,focused_fire,"0x2054","",5.59,114.43
+20,4021,43.788523,40.649879,2.000000,False,1,6,focused_fire,"0x2054","",5.67,120.11
+21,4222,43.393545,40.649879,2.000000,False,1,6,focused_fire,"0x2054","",5.58,125.69
+22,4423,43.032408,40.649879,2.000000,False,1,6,focused_fire,"0x2054","",5.60,131.30
+23,4624,42.636684,40.649879,2.000000,False,1,6,focused_fire,"0x2054","",5.70,137.00
+24,4825,42.230623,40.649879,2.000000,False,1,6,focused_fire,"0x2054","",5.73,142.73
+25,5026,41.858652,40.649879,2.000000,False,1,6,focused_fire,"0x2054","",5.62,148.35
+26,5227,41.455144,40.649879,2.000000,False,1,6,focused_fire,"0x2054","",5.62,153.98
+27,5428,41.112884,40.649879,2.000000,False,1,6,focused_fire,"0x2054","",5.68,159.66
+28,5629,40.725772,40.649879,2.000000,False,1,6,focused_fire,"0x2054","",5.69,165.35
+29,5830,30.399169,40.649879,2.000000,True,1,6,focused_fire,"0x2054","{"0x2034": {"loss": 10.0, "satisfied": false}, "0x2040": {"loss": 10.0, "satisfied": false}, "0x2054": {"loss": 0.029334, "satisfied": false}, "0x2060": {"loss": 10.0, "satisfied": false}, "0x2070": {"loss": 0.0025, "satisfied": true}, "0x207c": {"loss": 0.039667, "satisfied": false}}",5.61,170.97

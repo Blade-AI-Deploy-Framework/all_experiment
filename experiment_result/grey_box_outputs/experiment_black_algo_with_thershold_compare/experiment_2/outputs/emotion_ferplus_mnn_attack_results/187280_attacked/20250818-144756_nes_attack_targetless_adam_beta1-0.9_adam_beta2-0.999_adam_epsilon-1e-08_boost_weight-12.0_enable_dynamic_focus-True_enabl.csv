@@ -1,0 +1,74 @@
+# --- Attack Parameters ---
+# {
+#     "executable": "/temp/resources/execution_files/emotion_ferplus_mnn",
+#     "image": "/img_align_celeba/187280.jpg",
+#     "hooks": "/temp/hook_config/emotion_ferplus_mnn_hook_config.json",
+#     "model": [
+#         "/temp/resources/models/emotion_ferplus.mnn"
+#     ],
+#     "models": null,
+#     "iterations": 200,
+#     "learning_rate": 2.0,
+#     "l_inf_norm": 16.0,
+#     "lr_decay_rate": 0.97,
+#     "lr_decay_steps": 50,
+#     "missing_hook_penalty": 10.0,
+#     "margin": 0.05,
+#     "population_size": 200,
+#     "sigma": 0.6,
+#     "enable_stagnation_decay": true,
+#     "stagnation_patience": 20,
+#     "min_loss_delta": 0.001,
+#     "enable_fitness_shaping": true,
+#     "adam_beta1": 0.9,
+#     "adam_beta2": 0.999,
+#     "adam_epsilon": 1e-08,
+#     "enable_dynamic_focus": true,
+#     "evaluation_window": 10,
+#     "boost_weight": 12.0,
+#     "non_target_weight": 1.0,
+#     "satisfied_weight": 3.0,
+#     "satisfaction_threshold": 0.01,
+#     "satisfaction_patience": 3,
+#     "raw_args_template": null,
+#     "workers": 64,
+#     "output_dir": "/temp/outputs/emotion_ferplus_mnn_attack_results/187280_attacked",
+#     "model_paths": [
+#         "/temp/resources/models/emotion_ferplus.mnn"
+#     ]
+# }
+# -----------------------
+
+iteration,total_queries,loss,best_loss,lr,is_successful_iter,num_satisfied_hooks,total_hooks,attack_mode,focus_targets,hook_details,iter_time_s,total_time_s
+1,202,10.545248,inf,2.000000,False,0,2,scouting,"None","",5.81,6.33
+2,403,10.543585,10.545248,2.000000,False,0,2,scouting,"None","",5.83,12.86
+3,604,10.541329,10.543585,2.000000,False,0,2,scouting,"None","",5.74,19.28
+4,805,10.538433,10.541329,2.000000,False,0,2,scouting,"None","",5.78,25.75
+5,1006,10.534460,10.538433,2.000000,False,0,2,scouting,"None","",5.71,32.15
+6,1207,10.526056,10.534460,2.000000,False,0,2,scouting,"None","",5.76,38.61
+7,1408,10.516886,10.526056,2.000000,False,0,2,scouting,"None","",5.85,45.14
+8,1609,10.506049,10.516886,2.000000,False,0,2,scouting,"None","",5.76,51.60
+9,1810,10.492877,10.506049,2.000000,False,0,2,scouting,"None","",5.78,58.06
+10,2011,10.471513,10.492877,2.000000,False,0,2,scouting,"None","",5.68,64.43
+11,2212,15.434026,10.471513,2.000000,False,0,2,focused_fire,"0x2224","",5.79,70.91
+12,2413,15.248501,10.471513,2.000000,False,0,2,focused_fire,"0x2224","",5.82,76.73
+13,2614,14.888932,10.471513,2.000000,False,0,2,focused_fire,"0x2224","",5.79,82.53
+14,2815,14.614874,10.471513,2.000000,False,0,2,focused_fire,"0x2224","",5.74,88.27
+15,3016,14.265843,10.471513,2.000000,False,0,2,focused_fire,"0x2224","",5.76,94.03
+16,3217,13.948598,10.471513,2.000000,False,0,2,focused_fire,"0x2224","",5.72,99.76
+17,3418,13.652223,10.471513,2.000000,False,0,2,focused_fire,"0x2224","",5.75,105.51
+18,3619,13.244588,10.471513,2.000000,False,0,2,focused_fire,"0x2224","",5.79,111.30
+19,3820,12.922786,10.471513,2.000000,False,0,2,focused_fire,"0x2224","",5.80,117.10
+20,4021,12.674144,10.471513,2.000000,False,0,2,focused_fire,"0x2224","",5.69,122.79
+21,4222,12.434848,10.471513,2.000000,False,0,2,focused_fire,"0x2224","",5.75,128.54
+22,4423,12.006753,10.471513,2.000000,False,0,2,focused_fire,"0x2224","",5.65,134.20
+23,4624,11.838915,10.471513,2.000000,False,0,2,focused_fire,"0x2224","",5.71,139.91
+24,4825,11.566473,10.471513,2.000000,False,0,2,focused_fire,"0x2224","",5.78,145.70
+25,5026,11.279968,10.471513,2.000000,False,0,2,focused_fire,"0x2224","",5.77,151.47
+26,5227,11.029185,10.471513,2.000000,False,0,2,focused_fire,"0x2224","",5.76,157.23
+27,5428,10.692944,10.471513,2.000000,False,0,2,focused_fire,"0x2224","",5.76,163.00
+28,5629,0.599005,10.471513,2.000000,False,0,2,focused_fire,"0x2224","",5.65,168.65
+29,5830,0.325823,0.599005,2.000000,False,0,2,focused_fire,"0x2224","",5.78,175.14
+30,6031,0.080789,0.325823,2.000000,False,1,2,focused_fire,"0x2224","",5.80,181.63
+31,6232,0.062532,0.080789,2.000000,False,1,2,focused_fire,"0x2224","",5.75,188.07
+32,6433,0.045649,0.062532,2.000000,True,1,2,focused_fire,"0x2224","{"0x2224": {"loss": 0.0, "satisfied": true}, "0x223c": {"loss": 0.045649, "satisfied": false}}",5.75,194.51

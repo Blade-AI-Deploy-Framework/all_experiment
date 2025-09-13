@@ -1,0 +1,56 @@
+# --- Attack Parameters ---
+# {
+#     "executable": "/temp/resources/execution_files/emotion_ferplus_mnn",
+#     "image": "/img_align_celeba/158463.jpg",
+#     "hooks": "/temp/hook_config/emotion_ferplus_mnn_hook_config.json",
+#     "model": [
+#         "/temp/resources/models/emotion_ferplus.mnn"
+#     ],
+#     "models": null,
+#     "iterations": 200,
+#     "learning_rate": 2.0,
+#     "l_inf_norm": 16.0,
+#     "lr_decay_rate": 0.97,
+#     "lr_decay_steps": 50,
+#     "missing_hook_penalty": 10.0,
+#     "margin": 0.05,
+#     "population_size": 200,
+#     "sigma": 0.6,
+#     "enable_stagnation_decay": true,
+#     "stagnation_patience": 20,
+#     "min_loss_delta": 0.001,
+#     "enable_fitness_shaping": true,
+#     "adam_beta1": 0.9,
+#     "adam_beta2": 0.999,
+#     "adam_epsilon": 1e-08,
+#     "enable_dynamic_focus": true,
+#     "evaluation_window": 10,
+#     "boost_weight": 12.0,
+#     "non_target_weight": 1.0,
+#     "satisfied_weight": 3.0,
+#     "satisfaction_threshold": 0.01,
+#     "satisfaction_patience": 3,
+#     "raw_args_template": null,
+#     "workers": 64,
+#     "output_dir": "/temp/outputs/emotion_ferplus_mnn_attack_results/158463_attacked",
+#     "model_paths": [
+#         "/temp/resources/models/emotion_ferplus.mnn"
+#     ]
+# }
+# -----------------------
+
+iteration,total_queries,loss,best_loss,lr,is_successful_iter,num_satisfied_hooks,total_hooks,attack_mode,focus_targets,hook_details,iter_time_s,total_time_s
+1,202,10.415361,inf,2.000000,False,0,2,scouting,"None","",5.83,6.34
+2,403,10.344318,10.415361,2.000000,False,0,2,scouting,"None","",5.94,12.98
+3,604,10.295417,10.344318,2.000000,False,0,2,scouting,"None","",5.81,19.50
+4,805,10.221706,10.295417,2.000000,False,0,2,scouting,"None","",5.77,25.97
+5,1006,10.159358,10.221706,2.000000,False,0,2,scouting,"None","",5.74,32.42
+6,1207,10.091556,10.159358,2.000000,False,0,2,scouting,"None","",5.69,38.80
+7,1408,0.351923,10.091556,2.000000,False,0,2,scouting,"None","",5.81,45.32
+8,1609,0.268358,0.351923,2.000000,False,1,2,scouting,"None","",5.74,51.76
+9,1810,0.220969,0.268358,2.000000,False,1,2,scouting,"None","",5.77,58.24
+10,2011,0.177387,0.220969,2.000000,False,1,2,scouting,"None","",5.75,64.70
+11,2212,1.608709,0.177387,2.000000,False,1,2,focused_fire,"0x2244","",5.86,71.26
+12,2413,1.159069,0.177387,2.000000,False,1,2,focused_fire,"0x2244","",5.79,77.04
+13,2614,0.647378,0.177387,2.000000,False,1,2,focused_fire,"0x2244","",5.81,82.86
+14,2815,0.401066,0.177387,2.000000,True,1,2,focused_fire,"0x2244","{"0x222c": {"loss": 0.0, "satisfied": true}, "0x2244": {"loss": 0.033422, "satisfied": false}}",5.86,88.72

@@ -1,0 +1,45 @@
+# --- Attack Parameters ---
+# {
+#     "attack_type": "square",
+#     "executable": "./resources/execution_files/liveness_Vit_mnn",
+#     "image": "/model_deploy_execution_attack/resources/filtered_images/n003434-0064_01.jpg",
+#     "hooks": "/model_deploy_execution_attack/hook_config/liveness_Vit_mnn_hook_config.json",
+#     "model": null,
+#     "models": "/model_deploy_execution_attack/resources/models/liveness_Vit.mnn",
+#     "iterations": 1000,
+#     "l_inf_norm": 20.0,
+#     "missing_hook_penalty": 10.0,
+#     "margin": 0.001,
+#     "enable_stagnation_decay": true,
+#     "learning_rate": 5.0,
+#     "lr_decay_rate": 0.97,
+#     "lr_decay_steps": 50,
+#     "stagnation_patience": 20,
+#     "min_loss_delta": 0.001,
+#     "enable_dynamic_focus": false,
+#     "evaluation_window": 10,
+#     "boost_weight": 10.0,
+#     "non_target_weight": 1.0,
+#     "satisfied_weight": 3.0,
+#     "satisfaction_threshold": 0.01,
+#     "satisfaction_patience": 3,
+#     "raw_args_template": null,
+#     "workers": 64,
+#     "output_dir": "/model_deploy_execution_attack/attack_results/liveness_Vit_mnn_square_n003434-0064_01_20250911-220619",
+#     "p_init": 0.5,
+#     "model_paths": [
+#         "/model_deploy_execution_attack/resources/models/liveness_Vit.mnn"
+#     ]
+# }
+# -----------------------
+
+iteration,total_queries,loss,best_loss,lr,is_successful_iter,num_satisfied_hooks,total_hooks,attack_mode,focus_targets,hook_details,iter_time_s,total_time_s
+1,2,0.097997,0.052712,5.000000,False,0,1,static,"N/A","",1.64,3.31
+2,3,0.023426,0.052712,5.000000,False,0,1,static,"N/A","",1.67,4.99
+3,4,0.024221,0.023426,5.000000,False,0,1,static,"N/A","",1.64,6.66
+4,5,0.034480,0.023426,5.000000,False,0,1,static,"N/A","",1.67,8.34
+5,6,0.087888,0.023426,5.000000,False,0,1,static,"N/A","",1.63,9.99
+6,7,0.063171,0.023426,5.000000,False,0,1,static,"N/A","",1.65,11.65
+7,8,0.012300,0.023426,5.000000,False,0,1,static,"N/A","",1.66,13.32
+8,9,0.006814,0.012300,5.000000,False,1,1,static,"N/A","",1.67,15.01
+9,10,0.000775,0.006814,5.000000,True,1,1,static,"N/A","{"0x2d1c": {"loss": 0.000775, "satisfied": true}}",1.65,16.69
